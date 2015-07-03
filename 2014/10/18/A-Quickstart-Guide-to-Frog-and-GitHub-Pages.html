@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>A Quickstart Guide to Frog and GitHub Pages</title>
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="//jarcane.github.io/themes/Casper/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="//jarcane.github.io/themes/Casper/assets/css/screen.css?v=1.0.0" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+
+    <link rel="canonical" href="https://jarcane.github.io/2014/10/18/A-Quickstart-Guide-to-Frog-and-GitHub-Pages.html" />
+    
+    <meta property="og:site_name" content="Arcane Syntax" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="A Quickstart Guide to Frog and GitHub Pages" />
+    <meta property="og:description" content="It was discussed recently on the #racket freenode channel that getting going with Frog might actually be a bit tricky for someone not coming from the Racket ecosystem or unfamiliar with Github Pages. The process is actually pretty straightforward, but..." />
+    <meta property="og:url" content="https://jarcane.github.io/2014/10/18/A-Quickstart-Guide-to-Frog-and-GitHub-Pages.html" />
+    <meta property="article:published_time" content="2014-10-17T21:00:00.000Z" />
+    <meta property="article:modified_time" content="2015-07-03T20:16:20.540Z" />
+    <meta property="article:tag" content="Racket" />
+    <meta property="article:tag" content="Frog" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="A Quickstart Guide to Frog and GitHub Pages" />
+    <meta name="twitter:description" content="It was discussed recently on the #racket freenode channel that getting going with Frog might actually be a bit tricky for someone not coming from the Racket ecosystem or unfamiliar with Github Pages. The process is actually pretty straightforward, but..." />
+    <meta name="twitter:url" content="https://jarcane.github.io/2014/10/18/A-Quickstart-Guide-to-Frog-and-GitHub-Pages.html" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Arcane Syntax",
+    "author": {
+        "@type": "Person",
+        "name": "John Berry",
+        "image": "https://avatars.githubusercontent.com/u/8036258?v=3",
+        "url": "undefined/author/undefined",
+        "sameAs": "http://jarcane.github.com"
+    },
+    "headline": "A Quickstart Guide to Frog and GitHub Pages",
+    "url": "https://jarcane.github.io/2014/10/18/A-Quickstart-Guide-to-Frog-and-GitHub-Pages.html",
+    "datePublished": "2014-10-17T21:00:00.000Z",
+    "dateModified": "2015-07-03T20:16:20.540Z",
+    "keywords": "Racket,  Frog",
+    "description": "It was discussed recently on the #racket freenode channel that getting going with Frog might actually be a bit tricky for someone not coming from the Racket ecosystem or unfamiliar with Github Pages. The process is actually pretty straightforward, but..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost ?" />
+    <link rel="alternate" type="application/rss+xml" title="Arcane Syntax" href="https://jarcane.github.io/rss" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+</head>
+<body class="post-template tag-Racket tag-Frog">
+
+    
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="https://jarcane.github.io">Home</a>
+        <!-- <a class="subscribe-button icon-feed" href="https://jarcane.github.io/rss/">Subscribe</a> -->
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post tag-Racket tag-Frog">
+
+        <header class="post-header">
+            <h1 class="post-title">A Quickstart Guide to Frog and GitHub Pages</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2014-10-18">18 October 2014</time>  on <a href="https://jarcane.github.io/tag/Racket">Racket</a>, <a href="https://jarcane.github.io/tag/Frog"> Frog</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>It was discussed recently on the #racket freenode channel that getting
+going with Frog might actually be a bit tricky for someone not coming
+from the Racket ecosystem or unfamiliar with Github Pages. The process
+is actually pretty straightforward, but the steps involved aren&#8217;t
+exactly documented anywhere in one place, and I promised to look into
+remedying that. Arcane Syntax itself is hosted on GHP, and generated
+with Frog, so I had some experience in getting it all working and
+thought I could help.</p>
+</div>
+<div class="paragraph">
+<p>Read on past the jump for a quick guide to building a blog in Frog and
+hosting it on Github Pages.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="step-1-install-racket">Step 1: Install Racket</h4>
+<div class="paragraph">
+<p>Frog is powered by the Racket programming language, and is currently
+available primarily as a package for Racket, so we&#8217;ll need that. You can
+download Racket for your platform, be it *nix, Mac, or Windows, from
+their <a href="http://download.racket-lang.org/">web site</a>. If you&#8217;re on a Linux
+or BSD, you might also check your package repo for it, but be sure it&#8217;s
+up-to-date: Frog needs Racket 6, and I know at least Debian is still
+only hosting 5.x.</p>
+</div>
+<div class="paragraph">
+<p>Crucially here, you also need to make sure that Racket&#8217;s root directory
+is available in your command-line path. Unixen should take care of this
+automatically, but Windows will need it added to the $PATH if we want
+this to be a painless process. You&#8217;ll need to go to the System Control
+Panel, Advanced System Settings, Environment Variables, and edit Path to
+include "C:Files" for 64-bit Racket or "C:Files (x86)" for 32-bit.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="step-2-install-frog">Step 2: Install Frog</h4>
+<div class="paragraph">
+<p>As long as Step 1 has gone fine, this part is easy. Go to your command
+line and do <code>raco pkg install frog</code>.</p>
+</div>
+<div class="paragraph">
+<p>raco is the Racket command-line swiss army knife, used for everything
+from compiling executables to installing packages; it&#8217;ll also be your
+interface for Frog commands too, now that it&#8217;s installed.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="step-3-make-a-github-account">Step 3: Make a Github Account</h4>
+<div class="paragraph">
+<p><a href="http://github.com">GitHub</a> is a service for hosting source repositories
+managed by the Git version control system. You can create a new account
+right from the main page, picking a username, email, and password. It&#8217;ll
+ask you what plan you wish to use, with Free as an option so long as you
+don&#8217;t mind all your repos being public. It will also send an email to
+whatever account you gave it, to verify that email for future use for
+things like password recovery.</p>
+</div>
+<div class="paragraph">
+<p><em>NOTE:</em> By default, the email address you give Github will be publicly
+posted on your account profile. If you don&#8217;t want this to happen, once
+you&#8217;ve verified your email address, you can tell it to 'keep my email
+address private' on the email settings page.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="step-4-install-git">Step 4: Install Git</h4>
+<div class="paragraph">
+<p>You&#8217;ll also need to install Git, because as the previous step alluded
+to, it&#8217;s what we&#8217;re going to use to manage and sync our changes to the
+blog whenever we generate a new post and so forth.</p>
+</div>
+<div class="paragraph">
+<p>If you&#8217;re on Windows, the path of least resistance here is just to
+install the <a href="http://windows.github.com">Github for Windows</a> client. Ditto
+for Macs, which have their <a href="https://mac.github.com/">own client</a>. It&#8217;s not
+without it&#8217;s wrinkles, but for our purposes it is dead easy. Otherwise,
+if we&#8217;re on Unixen, we&#8217;ll probably need to install it from our package
+repo of choice.</p>
+</div>
+<div class="paragraph">
+<p>You&#8217;ll also need to do some additional setup things as well, like
+creating an SSH key for using Git and stuff, which I am going to pass
+along to the absolutely excellent
+<a href="https://help.github.com/articles/set-up-git/">Github Tutorial page</a> on
+setting up Git.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="step-5-make-a-repo-for-your-page">Step 5: Make a Repo for your page</h4>
+<div class="paragraph">
+<p>If you&#8217;re logged in to Github, you can just click on the little + symbol
+on the top bar of the site and choose "New Repository".</p>
+</div>
+<div class="paragraph">
+<p>For the name, we want to name it after the URL we&#8217;re going to use to get
+to our new blog. Github does a really cool thing where a
+<em>username</em>.github.com repo will be automatically uploaded and hosted
+at that URL. So that&#8217;s what we&#8217;ll name our repo, using the username we
+chose in Step 3.</p>
+</div>
+<div class="paragraph">
+<p>It&#8217;s up to you whether you want it to be public or private, but the
+latter option is only available if you pay for hosting. You can also
+provide a description. Don&#8217;t worry about the .gitignore and license
+stuff, and we don&#8217;t really need to make a README either. We actually
+want our new repo completely empty.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="step-6-make-the-local-mirror-of-our-blog">Step 6: Make the local mirror of our Blog</h4>
+<div class="paragraph">
+<p>Guess what! See that page that just appeared when we started an empty
+repo? It happens to be a complete set of instructions to link our online
+repository to a local folder on our computer. We just have to know a
+little bit more on what to do with them.</p>
+</div>
+<div class="paragraph">
+<p>If you&#8217;re on Windows or Mac, and you&#8217;ve installed the Github client,
+this is easy as can be: click that green button. If you&#8217;ve followed the
+set up instructions I linked in Step 4, that should open it up in our
+Github client and let us create a local "clone" of our online repo.</p>
+</div>
+<div class="paragraph">
+<p>If you&#8217;re on Unixen, we want to do the thing it says there under "or
+create a new repository on the command line", save that it&#8217;s left out an
+important step: we need to make a folder for all this to happen in! So
+we revise the instructions too:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>mkdir [username].github.com
+cd [username].github.com
+touch README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/frogtutorial/frogtutorial.github.com.git
+git push -u origin master</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Substitute <code>[username]</code> for the name you used on Github.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="step-7-build-our-new-blog">Step 7: Build our new blog</h4>
+<div class="paragraph">
+<p>Navigate to the directory you created in the previous step in your
+favorite command-line shell, and do <code>raco frog --init</code>.</p>
+</div>
+<div class="paragraph">
+<p>Frog will now build all the requisite template files to generate your
+new blog! These will all be on defaults, of course, but you can even run
+<code>raco frog -bp</code> and it will build and open your blog in your web browser
+running on a local webserver. Neat! Hit Ctrl-C to stop the server if you
+don&#8217;t want it to stay running.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="step-8-customize-our-blog">Step 8: Customize our Blog</h4>
+<div class="paragraph">
+<p>Right now though, our blog is pretty generic. It&#8217;s all on defaults! We
+can change some of the most common settings and details from the
+<code>.frogrc</code> file that lives in the root of our site folder. Open it up in
+your favorite text editor.</p>
+</div>
+<div class="paragraph">
+<p>Crucially, we really need to change the URL, to match the URL of our
+Github page: <code>http://[username].github.com</code></p>
+</div>
+<div class="paragraph">
+<p>You can also change the title and author here, as well as some settings
+about how Frog generates pages, which are all helpfully described right
+there in the file. We don&#8217;t really need to mess with any of them for now
+though.</p>
+</div>
+<div class="paragraph">
+<p>We can also tell it which text editor we use, by giving it the name of
+the executable. This is useful because we can follow up with some
+helpful frog command to open the editor to the last new post we told it
+to make.</p>
+</div>
+<div class="paragraph">
+<p>The default templates that Frog uses to generate pages are also
+tweakable, if you know some HTML and so forth, and it uses Bootstrap for
+making a pretty site; so you can use Bootstrap templates like those on
+<a href="http://bootswatch.com/">Bootswatch</a> to jazz it up from the basic
+template. I&#8217;ve also written a short little guide for setting up
+<a href="http://jarcane.github.io/blog/2014/09/16/disqus-comments-with-frog.html">Disqus
+comments</a> properly.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="step-9-generate-a-new-post">Step 9: Generate a new post</h4>
+<div class="paragraph">
+<p>So let&#8217;s make a post to our new blog! Once more from our blog&#8217;s home
+folder, we can do <code>raco frog -n "[post title]"</code>. It will helpfully
+display the name of the Markdown file it just generated to be the
+template of our new post.</p>
+</div>
+<div class="paragraph">
+<p>You can open up this .md file in your favorite text editor or run
+<code>raco frog --edit</code> if we&#8217;ve set that up.</p>
+</div>
+<div class="paragraph">
+<p>Frog files are in the form of Markdown, which is a handy little markup
+language invented by John Gruber that makes pretty looking text files
+that also parse semi-easily to equally pretty HTML. Mr. Gruber has a
+helpful guide for the basics on his page defining
+<a href="http://daringfireball.net/projects/markdown/syntax">Markdown syntax</a>.</p>
+</div>
+<div class="paragraph">
+<p>A new Frog post already includes some boilerplate stuff: a block at the
+top with title, date/time, and tags, some filler text, and a <code>more</code> tag
+for marking a break in the text between what&#8217;s shown in your main blog
+page and what&#8217;s only shown by clicking through to individual posts.</p>
+</div>
+<div class="paragraph">
+<p>The filler text can be replaced, the more tag removed or placed where
+you like, but crucially, you <em>MUST</em> change the DRAFT tag to something
+else, or else Frog will skip it when you build the blog!</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="step-10-build-your-blog">Step 10: Build your blog</h4>
+<div class="paragraph">
+<p>Save your text file, and now we can rebuild the blog to include it. Do
+the following on the command line:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>raco frog -c  *clears any old cached files, don't forget this!*
+*then*
+raco frog -bp  *if you want to see a preview*
+*or just*
+raco frog -b  *if you don't*</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If everything looks satisfactory, proceed to step 11. Otherwise, tweak
+things as needed and redo the build.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="step-11-sync-your-changes-with-github">Step 11: Sync your changes with Github</h4>
+<div class="paragraph">
+<p>Now we need to commit and upload our newly built blog to Github to host.</p>
+</div>
+<div class="paragraph">
+<p>If you&#8217;re on Windows or Mac and using the Github client, this can be
+done by clicking on our repo, adding a summary and description under
+"Uncommitted Changes", clicking "Commit to master", then finally
+clicking the Sync button on the upper right.</p>
+</div>
+<div class="paragraph">
+<p>If we&#8217;re on Unixen, we do this:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>git add -A
+git commit -m "Some kind of short description"
+git push</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Once everything is uploaded, and accounting for a bit of time for Github
+itself to recognize that stuff lives there now, we should be able to see
+our new blog online at <code>http://[username].github.com</code>!</p>
+</div>
+<div class="paragraph">
+<p>If you want any more help with Frog, be sure to check out the
+<a href="https://github.com/greghendershott/frog">Frog repo</a>, and if you&#8217;ve any
+questions about Git or Github, their help files are surprisingly helpful
+and informative. Enjoy!</p>
+</div>
+</div>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="" style="background-image: url(https://avatars.githubusercontent.com/u/8036258?v=3)"><span class="hidden">John Berry's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="">John Berry</a></h4>
+
+                    <p>Read <a href="">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    <span class="author-location icon-location">Finland</span>
+                    <span class="author-link icon-link"><a href="http://jarcane.github.com">http://jarcane.github.com</a></span>
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/share?text=A%20Quickstart%20Guide%20to%20Frog%20and%20GitHub%20Pages&amp;url=https://jarcane.github.io/2014/10/18/A-Quickstart-Guide-to-Frog-and-GitHub-Pages.html"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://jarcane.github.io/2014/10/18/A-Quickstart-Guide-to-Frog-and-GitHub-Pages.html"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=https://jarcane.github.io/2014/10/18/A-Quickstart-Guide-to-Frog-and-GitHub-Pages.html"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+
+        <section class="post-comments">
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+          var disqus_shortname = 'jarcane'; // required: replace example with your forum shortname
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </section>
+
+
+    </article>
+
+</main>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="https://jarcane.github.io">Arcane Syntax</a> &copy; 2015</section>
+        <section class="poweredby">Proudly published with <a href="http://hubpress.io">HubPress</a></section>
+    </footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js?v="></script> 
+      <script type="text/javascript">
+        jQuery( document ).ready(function() {
+          // change date with ago
+          jQuery('ago.ago').each(function(){
+            var element = jQuery(this).parent();
+            element.html( moment(element.text()).fromNow());
+          });
+        });
+
+        hljs.initHighlightingOnLoad();      
+      </script>
+
+    <script type="text/javascript" src="//jarcane.github.io/themes/Casper/assets/js/jquery.fitvids.js?v=1.0.0"></script>
+    <script type="text/javascript" src="//jarcane.github.io/themes/Casper/assets/js/index.js?v=1.0.0"></script>
+
+</body>
+</html>
