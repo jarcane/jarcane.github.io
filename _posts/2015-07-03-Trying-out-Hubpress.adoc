@@ -1,3 +1,9 @@
 = Trying out Hubpress
 
-Giving this a go because I was getting tired of dealing with the process involved in a static blog generator.
+:hp-tags: announcements
+
+My blog has languished considerably as of late. Partly this is due to simple negligence, but also partly because of the effort and cumbersome workflow involved in using a static blog generator. I loved supporting a good Racket project, and Frog is an excellent blog generator, it was just a pain to go through so many steps just to post something, especially if it was only a quick thought. 
+
+So, giving Hubpress a quick shot. I'm not sure about the AsciiDoc thing, but being able to open an admin panel and add a post as easily as any Blogger page is definitely appealing. 
+
+I'll try and get the old posts converted up as soon as I can, though it might be a while.
