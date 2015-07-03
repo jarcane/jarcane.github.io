@@ -7,3 +7,5 @@ My blog has languished considerably as of late. Partly this is due to simple neg
 So, giving Hubpress a shot. I'm not sure about the AsciiDoc thing, but being able to open an admin panel and add a post as easily as any Blogger page is definitely appealing. 
 
 I'll try and get the old posts converted up as soon as I can, though it might be a while.
+
+EDIT: I'm also monkeying about with themes, so my apologies if things are a bit screwy for a while.
