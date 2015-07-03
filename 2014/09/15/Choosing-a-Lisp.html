@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Choosing a Lisp</title>
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="//jarcane.github.io/themes/Casper/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="//jarcane.github.io/themes/Casper/assets/css/screen.css?v=1.0.0" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+
+    <link rel="canonical" href="https://jarcane.github.io/2014/09/15/Choosing-a-Lisp.html" />
+    
+    <meta property="og:site_name" content="Arcane Syntax" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Choosing a Lisp" />
+    <meta property="og:description" content="I began my adventure back into the world of programming with Python. My last book had started to peter out in sales, and I began seriously re-evaluating my career potential, and it was at this point that a friend introduced..." />
+    <meta property="og:url" content="https://jarcane.github.io/2014/09/15/Choosing-a-Lisp.html" />
+    <meta property="article:published_time" content="2014-09-14T21:00:00.000Z" />
+    <meta property="article:modified_time" content="2015-07-03T19:44:57.481Z" />
+    <meta property="article:tag" content="Lisp" />
+    <meta property="article:tag" content="Racket" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Choosing a Lisp" />
+    <meta name="twitter:description" content="I began my adventure back into the world of programming with Python. My last book had started to peter out in sales, and I began seriously re-evaluating my career potential, and it was at this point that a friend introduced..." />
+    <meta name="twitter:url" content="https://jarcane.github.io/2014/09/15/Choosing-a-Lisp.html" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Arcane Syntax",
+    "author": {
+        "@type": "Person",
+        "name": "John Berry",
+        "image": "https://avatars.githubusercontent.com/u/8036258?v=3",
+        "url": "undefined/author/undefined",
+        "sameAs": "http://jarcane.github.com"
+    },
+    "headline": "Choosing a Lisp",
+    "url": "https://jarcane.github.io/2014/09/15/Choosing-a-Lisp.html",
+    "datePublished": "2014-09-14T21:00:00.000Z",
+    "dateModified": "2015-07-03T19:44:57.481Z",
+    "keywords": "Lisp,  Racket",
+    "description": "I began my adventure back into the world of programming with Python. My last book had started to peter out in sales, and I began seriously re-evaluating my career potential, and it was at this point that a friend introduced..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost ?" />
+    <link rel="alternate" type="application/rss+xml" title="Arcane Syntax" href="https://jarcane.github.io/rss" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+</head>
+<body class="post-template tag-Lisp tag-Racket">
+
+    
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="https://jarcane.github.io">Home</a>
+        <!-- <a class="subscribe-button icon-feed" href="https://jarcane.github.io/rss/">Subscribe</a> -->
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post tag-Lisp tag-Racket">
+
+        <header class="post-header">
+            <h1 class="post-title">Choosing a Lisp</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2014-09-15">15 September 2014</time>  on <a href="https://jarcane.github.io/tag/Lisp">Lisp</a>, <a href="https://jarcane.github.io/tag/Racket"> Racket</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <div class="paragraph">
+<p>I began my adventure back into the world of programming with Python. My
+last book had started to peter out in sales, and I began seriously
+re-evaluating my career potential, and it was at this point that a
+friend introduced me to <a href="http://codecademy.com">Codecademy</a>. I was
+immediately taken with the interactive approach to programming
+instruction, and in particular gravitated to Python, because it was a
+language I&#8217;d tinkered with before and whose power, especially in strings
+and lists, I&#8217;d always been impressed with.</p>
+</div>
+<div class="paragraph">
+<p>I devoured the Python course greedily and soon moved on to my first
+"big" project, <a href="https://github.com/jarcane/handhRL">handhRL</a> a roguelike
+based on one of my tabletop rulesets. However, as I grappled with the
+tedium of building random object generators with massive elseif-based
+constructor patterns, and the poor performance and gaming potential, I
+also was acutely aware I&#8217;d need to branch out into other languages.</p>
+</div>
+<div class="paragraph">
+<p>And then another friend recommended I try Lisp. I consider it a fateful
+day. I&#8217;m not honestly certain whether to curse him for it or thank him.
+I tried a number of entryways into the world, and indeed, choosing which
+Lisp to focus on has consumed much of the last two months of my time. I
+fall more in love with Lisp the more I learn of it, but choosing a
+flavor of it has tormented me more than perhaps it should.</p>
+</div>
+<div class="paragraph">
+<p>Here&#8217;s what I have learned.</p>
+</div>
+<div class="paragraph">
+<p>There are a dizzying array of Lisps out there, but by and large the main
+options boil down to the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Common Lisp</p>
+</li>
+<li>
+<p>Scheme</p>
+</li>
+<li>
+<p>Clojure</p>
+</li>
+<li>
+<p>Racket</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>There&#8217;s more of course, Paul Graham has Arc which powers Hacker News,
+there&#8217;s the venerable Emacs Lisp that powers the very editor I write
+these posts on, but those four are probably the most prominent and
+feasible for at least some practical amount of actual work.</p>
+</div>
+<div class="paragraph">
+<p>I started with Common Lisp. Or at least, attempting it. I suspect many
+people do, those that don&#8217;t instead get exposed to Scheme in college. I
+suspect now I understand why so many come away with a bad impression.
+Common Lisp is far easier to learn now than it was 10 years ago, but
+it&#8217;s still a dialect built on compromises and mired in ancient and
+cthonian syntax. I found myself stymied by having to learn 12 different
+ways of doing any given thing, and by chapter-long exercises done
+entirely in a REPL that then crashed or fell victim to an error
+somewhere back on page 2.</p>
+</div>
+<div class="paragraph">
+<p>So, from there I cast around and found Racket. And lo, the heavens did
+open, and mine eyes did see the light. While I did catch glimpses of the
+power of Lisp with my initial toolings, it was in the purity and clarity
+of Racket, in its wonderful documentation, in the easy power of the
+Lisp-1, that I found the full breadth of what I&#8217;d seen as I stumbled
+through the CL wilderness. I played and tinkered and hacked. I wrote an
+<a href="https://github.com/jarcane/MicroMini">8-bit VM</a> in just 206 lines of
+code. 206!</p>
+</div>
+<div class="paragraph">
+<p>But I stumbled as well. I ran into problems implementing terminal i/o
+with my virtual machine, so it would only run in Linux. I found myself
+frustrated by the lack of mature development for pretty common "getting
+work done" tasks, at least for the kind of work I wanted to do. As well,
+I found myself stymied by the books and documentation; put off by the
+beginner material, but utterly baffled by the advanced features.</p>
+</div>
+<div class="paragraph">
+<p>I made another run at Common Lisp, getting pretty far in Peter Seibel&#8217;s
+excellent <a href="http://www.gigamonkeys.com/book/">Practical Common Lisp</a>.
+Ultimately though, more exposure to the many-splendored weirdness of CL
+ultimately lead me to think perhaps it just wasn&#8217;t the flavor for me.</p>
+</div>
+<div class="paragraph">
+<p>Another friend had mentioned Clojure. I was put off by Clojure up until
+now, because it reeked of startup culture and I frankly have a
+long-standing grudge against Java. But Java is practically the reigning
+Lord and Master of the mobile-heavy Finnish scene, and it seemed to be
+driving a lot of new adoption locally and even a few actual jobs.</p>
+</div>
+<div class="paragraph">
+<p>So, I discussed it with my wife and we mutually agreed I should give it
+a shot. I meditated upon the
+<a href="http://clojurescriptkoans.com/">ClojureScript Koans</a>, and was initially
+quite intrigued by its #() and its funcional purity, if a bit baffled by
+the sheer number of different data types, and put off by the ugly
+syntax. I code-golfed a FizzBuzz in a tweet done in CS. I then thought I
+should meditate upon the full
+<a href="https://github.com/functional-koans/clojure-koans">Clojure Koans</a> in
+order to learn those things which CS had by necessity neglected.</p>
+</div>
+<div class="paragraph">
+<p>By the end, the only "enlightenment" I found there was the cold burning
+focus of pure fury. I hated its clunky implementation, it&#8217;s utter
+violation of the purity I so loved in a Lisp. I hated how utterly
+inconsistent everything was. I hated how any error could spell utter
+doom to your entire system, as typo&#8217;d recursions led to full CPUs and
+runaway threads. I hate hate hated the threading macro with the fire of
+a thousand incandescent supernovas.</p>
+</div>
+<div class="paragraph">
+<p>However, it also gave me a sense of perspective, and so I meditated on
+the <a href="https://github.com/google/lisp-koans">Common Lisp Koans</a>. There I
+faced a an anticlimax. The final meditation was on SBCL threads, and
+SBCL threads were like grasping a stream of water. I had recieved all
+the enlightenment that Common Lisp seemed ready to offer.</p>
+</div>
+<div class="paragraph">
+<p>And in the end, all I wanted was my Racket back. The prodigal son wanted
+to come home.</p>
+</div>
+<div class="paragraph">
+<p>I am sure that in the cold light of reason I could find work in Clojure
+or Common Lisp. I do indeed envy their library support, and have come to
+respect a number of those features that they offer, and may even seek to
+reimplement some of them in my own Racket set up.</p>
+</div>
+<div class="paragraph">
+<p>It is true as well that Racket is not well represented in the world of
+working programmers. But it is well represented in the world of computer
+science, a world I increasingly suspect I might like to enter if I
+should prove worthy. While there is something of a gap between the
+"beginner" and "advanced" levels of the Racket world, the flipside to
+this is that it is stuffed with incredibly brilliant people who are
+almost to a one the most polite and helpful people I&#8217;ve met since
+returning to programming.</p>
+</div>
+<div class="paragraph">
+<p>So, with at least a year of language courses before I can even think
+about a job or university, why not hang around and contribute and learn
+in a place where I feel most at home? It was Python being this for me
+that made me a programmer again, and I think it could be Racket doing so
+that makes me a <em>good</em> one.</p>
+</div>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="" style="background-image: url(https://avatars.githubusercontent.com/u/8036258?v=3)"><span class="hidden">John Berry's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="">John Berry</a></h4>
+
+                    <p>Read <a href="">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    <span class="author-location icon-location">Finland</span>
+                    <span class="author-link icon-link"><a href="http://jarcane.github.com">http://jarcane.github.com</a></span>
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/share?text=Choosing%20a%20Lisp&amp;url=https://jarcane.github.io/2014/09/15/Choosing-a-Lisp.html"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://jarcane.github.io/2014/09/15/Choosing-a-Lisp.html"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=https://jarcane.github.io/2014/09/15/Choosing-a-Lisp.html"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+
+        <section class="post-comments">
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+          var disqus_shortname = 'jarcane'; // required: replace example with your forum shortname
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </section>
+
+
+    </article>
+
+</main>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="https://jarcane.github.io">Arcane Syntax</a> &copy; 2015</section>
+        <section class="poweredby">Proudly published with <a href="http://hubpress.io">HubPress</a></section>
+    </footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js?v="></script> 
+      <script type="text/javascript">
+        jQuery( document ).ready(function() {
+          // change date with ago
+          jQuery('ago.ago').each(function(){
+            var element = jQuery(this).parent();
+            element.html( moment(element.text()).fromNow());
+          });
+        });
+
+        hljs.initHighlightingOnLoad();      
+      </script>
+
+    <script type="text/javascript" src="//jarcane.github.io/themes/Casper/assets/js/jquery.fitvids.js?v=1.0.0"></script>
+    <script type="text/javascript" src="//jarcane.github.io/themes/Casper/assets/js/index.js?v=1.0.0"></script>
+
+</body>
+</html>
