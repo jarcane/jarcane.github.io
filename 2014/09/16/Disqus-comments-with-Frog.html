@@ -23,7 +23,7 @@
     <meta property="og:description" content="I had a slightly tricky time setting up a numbered comment link with Disqus, so I thought it might be helpful to write up a quick post on how I did it. The standard Frog templates of course include a..." />
     <meta property="og:url" content="https://jarcane.github.io/2014/09/16/Disqus-comments-with-Frog.html" />
     <meta property="article:published_time" content="2014-09-15T21:00:00.000Z" />
-    <meta property="article:modified_time" content="2015-07-03T20:00:03.698Z" />
+    <meta property="article:modified_time" content="2015-07-03T20:01:50.838Z" />
     <meta property="article:tag" content="Racket" />
     <meta property="article:tag" content="Frog" />
     
@@ -47,7 +47,7 @@
     "headline": "Disqus comments with Frog",
     "url": "https://jarcane.github.io/2014/09/16/Disqus-comments-with-Frog.html",
     "datePublished": "2014-09-15T21:00:00.000Z",
-    "dateModified": "2015-07-03T20:00:03.698Z",
+    "dateModified": "2015-07-03T20:01:50.838Z",
     "keywords": "Racket,  Frog",
     "description": "I had a slightly tricky time setting up a numbered comment link with Disqus, so I thought it might be helpful to write up a quick post on how I did it. The standard Frog templates of course include a..."
 }
@@ -128,22 +128,22 @@ and create a footer that contains what we want. We want to add a set of</p>
 <p>tags after <code>@|content|</code> to contain a link that the Disqus software will
 then modify to contain a comments count. This looks like this:</p>
 </div>
-<div class="paragraph">
-<p>code,html---------------------------------------------------- code,html
-  &lt;footer&gt;
-    &lt;br&gt;
-    &lt;a href='@|uri-path|#disqus_thread'&gt;Comments&lt;/a&gt;
-    <strong> Disqus javascript goes here</strong>
-  &lt;/footer&gt;</p>
-</div>
 <div class="listingblock">
 <div class="content">
-<pre>Then, after the `a href` line we can just paste in the code from the
-second box in the _Universal Code_ guide, under "How to display comment
-count."
-
-And voila, numbered comments links in our Frog posts!</pre>
+<pre>  &lt;footer&gt;
+    &lt;br&gt;
+    &lt;a href='@|uri-path|#disqus_thread'&gt;Comments&lt;/a&gt;
+    ** Disqus javascript goes here**
+  &lt;/footer&gt;</pre>
 </div>
+</div>
+<div class="paragraph">
+<p>Then, after the <code>a href</code> line we can just paste in the code from the
+second box in the <em>Universal Code</em> guide, under "How to display comment
+count."</p>
+</div>
+<div class="paragraph">
+<p>And voila, numbered comments links in our Frog posts!</p>
 </div>
         </section>
 
