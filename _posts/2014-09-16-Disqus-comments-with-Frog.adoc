@@ -44,7 +44,8 @@ and create a footer that contains what we want. We want to add a set of
 tags after `@|content|` to contain a link that the Disqus software will
 then modify to contain a comments count. This looks like this:
 
-code,html---------------------------------------------------- code,html
+[code,html]
+----------------------------------------------------
   <footer>
     <br>
     <a href='@|uri-path|#disqus_thread'>Comments</a>
