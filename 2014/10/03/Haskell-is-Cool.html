@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Haskell is Cool</title>
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="//jarcane.github.io/themes/Casper/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="//jarcane.github.io/themes/Casper/assets/css/screen.css?v=1.0.0" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+
+    <link rel="canonical" href="https://jarcane.github.io/2014/10/03/Haskell-is-Cool.html" />
+    
+    <meta property="og:site_name" content="Arcane Syntax" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Haskell is Cool" />
+    <meta property="og:description" content="After my last post and some thinking, I ultimately settled on Learn You a Haskell as my next book to work through, and after some initial hassles trying to get a decent working environment set up, I must say that..." />
+    <meta property="og:url" content="https://jarcane.github.io/2014/10/03/Haskell-is-Cool.html" />
+    <meta property="article:published_time" content="2014-10-02T21:00:00.000Z" />
+    <meta property="article:modified_time" content="2015-07-03T20:12:39.157Z" />
+    <meta property="article:tag" content="Haskell" />
+    <meta property="article:tag" content="Racket" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Haskell is Cool" />
+    <meta name="twitter:description" content="After my last post and some thinking, I ultimately settled on Learn You a Haskell as my next book to work through, and after some initial hassles trying to get a decent working environment set up, I must say that..." />
+    <meta name="twitter:url" content="https://jarcane.github.io/2014/10/03/Haskell-is-Cool.html" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Arcane Syntax",
+    "author": {
+        "@type": "Person",
+        "name": "John Berry",
+        "image": "https://avatars.githubusercontent.com/u/8036258?v=3",
+        "url": "undefined/author/undefined",
+        "sameAs": "http://jarcane.github.com"
+    },
+    "headline": "Haskell is Cool",
+    "url": "https://jarcane.github.io/2014/10/03/Haskell-is-Cool.html",
+    "datePublished": "2014-10-02T21:00:00.000Z",
+    "dateModified": "2015-07-03T20:12:39.157Z",
+    "keywords": "Haskell,  Racket",
+    "description": "After my last post and some thinking, I ultimately settled on Learn You a Haskell as my next book to work through, and after some initial hassles trying to get a decent working environment set up, I must say that..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost ?" />
+    <link rel="alternate" type="application/rss+xml" title="Arcane Syntax" href="https://jarcane.github.io/rss" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+</head>
+<body class="post-template tag-Haskell tag-Racket">
+
+    
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="https://jarcane.github.io">Home</a>
+        <!-- <a class="subscribe-button icon-feed" href="https://jarcane.github.io/rss/">Subscribe</a> -->
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post tag-Haskell tag-Racket">
+
+        <header class="post-header">
+            <h1 class="post-title">Haskell is Cool</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2014-10-03">03 October 2014</time>  on <a href="https://jarcane.github.io/tag/Haskell">Haskell</a>, <a href="https://jarcane.github.io/tag/Racket"> Racket</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <div class="paragraph">
+<p>After my last post and some thinking, I ultimately settled on <em>Learn You
+a Haskell</em> as my next book to work through, and after some initial
+hassles trying to get a decent working environment set up, I must say
+that I&#8217;m quite enjoying the language itself. It was running across
+<a href="http://tryhaskell.org/">Try Haskell</a> that actually spurred me to finally
+take the leap in that direction (seriously, online REPLs are the best
+language demos period), and I was quickly impressed by the power hiding
+in that seemingly obtuse syntax.</p>
+</div>
+<div class="paragraph">
+<p>And of course, like everyone else ever (so many that <em>Learn You a
+Haskell</em> actually makes a bit of a joke out of it), I was impressed as
+hell with the Haskell quicksort solution.</p>
+</div>
+<div class="paragraph">
+<p>But after some tinkering in Racket, not for precisely the same reasons
+as the book uses it.</p>
+</div>
+<div class="paragraph">
+<p>For reference, the Haskell recursive quicksort looks like this:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>quicksort :: (Ord a) =&gt; [a] -&gt; [a]
+quicksort [] = []
+quicksort (x:xs) =
+    let smallerSorted = quicksort [a | a &lt;- xs, a &lt;= x]
+        biggerSorted = quicksort [a | a &lt;- xs, a &gt; x]
+    in smallerSorted ++ [x] ++ biggerSorted</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>I know, right? It&#8217;s short and sweet, and using multiple recursion and
+list filtering to solve it takes a hell of a lot of the work out of it.
+Hell, this is actually the first version of quicksort I&#8217;ve ever
+understood; though in my defense the last time I tried to write a
+quicksort was some 15 years ago as a teenage BASIC hacker (I failed.
+Repeatedly.)</p>
+</div>
+<div class="paragraph">
+<p>The book of course uses it as an example of the power of recursion, and
+it is indeed a good example of where clever use of that can do a lot in
+very little space (though personally I think the lazy factorial method
+is a cooler example), but the thing is that any language that implements
+good recursion can do the same algorithm and just as fast.</p>
+</div>
+<div class="paragraph">
+<p>For instance, Racket can do the exact same algorithm in just a few more
+lines (most of them in this case for clarity and convenience,
+semantically it&#8217;s <em>almost</em> identical [but not quite, and I&#8217;ll get to
+why]).</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>(define (qs lst)
+  (if (empty? lst)
+      lst
+      (let* ((hd (car lst))
+             (tl (cdr lst))
+             (smaller (qs (for/list ((i tl) #:when (&lt;= i hd)) i)))
+             (larger (qs (for/list ((i tl) #:when (&gt; i hd)) i))))
+         (flatten (cons smaller (cons hd larger))))))</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>So clearly, it&#8217;s not exactly the <em>recursion</em> that makes the example so
+cool. No, what makes the Haskell version cool is when you realize what
+it can do that our Racket port can&#8217;t: anything but numbers. The Haskell
+quicksort can readily handle numbers, strings, or lists of chars, all
+thanks to the power of this line right here:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">`quicksort </dt>
+<dd>
+<p>(Ord a) &#8658; [a] &#8594; [a]`</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p><em>Especially</em> the <code>(Ord a)</code> bit: that&#8217;s the Ord typeclass, which imports
+types that Haskell knows how to put in order, thus allowing a statically
+typed language to still nonetheless use the same &#8656; operator regardless
+of what type is actually being fed it (the other part of that feat is
+the <code>[a]</code> bit, the generics).</p>
+</div>
+<div class="paragraph">
+<p>To be able to get a similarly powerful, if not as convenient function,
+we have to upgrade our Racket version a bit:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>(define (qs-2 fun lst)
+  (if (empty? lst)
+      lst
+      (let* ((hd (car lst))
+             (tl (cdr lst))
+             (smaller (qs (for/list ((i tl) #:when (fun i hd)) i)))
+             (larger (qs (for/list ((i tl) #:when ((negate fun) i hd)) i))))
+        (flatten (cons smaller (cons hd larger))))))</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Now our Racket quicksort has become a higher-order function, and must be
+passed the less-than function it will use to find <em>smaller</em> as well as
+negate to find <em>larger</em>. But it&#8217;s still not exactly replicated the
+feat that Haskell&#8217;s version would, and doing so directly would mean a
+whole range of type checks. It is almost certainly possible, but not in
+so concise a manner.</p>
+</div>
+<div class="paragraph">
+<p>And of course, some of this difference comes from Haskell&#8217;s special
+little rules, like lists being mono-typed elements (as opposed to
+Racket&#8217;s free-wheeling ones); this is more limiting but also means that
+functions like quicksort can largely be written to assume a list will
+behave with it. If we pass it a list from elsewhere in our program, it
+will still work as long as its members are members of Ord.</p>
+</div>
+<div class="paragraph">
+<p>The amusing footnote to this is that the easy solution for Racket is to
+make it a higher-order function (and in fact, this is even what Racket&#8217;s
+built-in sort does), whereas in <em>Learn You a Haskell</em> the author doesn&#8217;t even get to
+higher-order functions until the chapter after the quicksort example.</p>
+</div>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="" style="background-image: url(https://avatars.githubusercontent.com/u/8036258?v=3)"><span class="hidden">John Berry's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="">John Berry</a></h4>
+
+                    <p>Read <a href="">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    <span class="author-location icon-location">Finland</span>
+                    <span class="author-link icon-link"><a href="http://jarcane.github.com">http://jarcane.github.com</a></span>
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/share?text=Haskell%20is%20Cool&amp;url=https://jarcane.github.io/2014/10/03/Haskell-is-Cool.html"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://jarcane.github.io/2014/10/03/Haskell-is-Cool.html"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=https://jarcane.github.io/2014/10/03/Haskell-is-Cool.html"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+
+        <section class="post-comments">
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+          var disqus_shortname = 'jarcane'; // required: replace example with your forum shortname
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </section>
+
+
+    </article>
+
+</main>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="https://jarcane.github.io">Arcane Syntax</a> &copy; 2015</section>
+        <section class="poweredby">Proudly published with <a href="http://hubpress.io">HubPress</a></section>
+    </footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js?v="></script> 
+      <script type="text/javascript">
+        jQuery( document ).ready(function() {
+          // change date with ago
+          jQuery('ago.ago').each(function(){
+            var element = jQuery(this).parent();
+            element.html( moment(element.text()).fromNow());
+          });
+        });
+
+        hljs.initHighlightingOnLoad();      
+      </script>
+
+    <script type="text/javascript" src="//jarcane.github.io/themes/Casper/assets/js/jquery.fitvids.js?v=1.0.0"></script>
+    <script type="text/javascript" src="//jarcane.github.io/themes/Casper/assets/js/index.js?v=1.0.0"></script>
+
+</body>
+</html>
