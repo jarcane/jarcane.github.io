@@ -1,0 +1,3 @@
+= Trying out Hubpress
+
+Giving this a go because I was getting tired of dealing with the process involved in a static blog generator.
