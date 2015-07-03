@@ -1,10 +1,1 @@
-{
-  "meta": {
-    "username": "jarcane",
-    "repositoryName": "jarcane.github.io",
-    "branch": "master"
-  },
-  "theme": {
-    "name": "Casper"
-  }
-}
+{"meta":{"username":"jarcane","repositoryName":"jarcane.github.io","branch":"master"},"site":{"title":"Arcane Syntax","description":"","url":"https://jarcane.github.io"},"socialnetwork":{},"theme":{"name":"Casper","url":"//jarcane.github.io/themes/Casper"}}
