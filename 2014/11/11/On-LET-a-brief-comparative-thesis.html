@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>On LET: a brief comparative thesis</title>
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="//jarcane.github.io/themes/Casper/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="//jarcane.github.io/themes/Casper/assets/css/screen.css?v=1.0.0" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+
+    <link rel="canonical" href="https://jarcane.github.io/2014/11/11/On-LET-a-brief-comparative-thesis.html" />
+    
+    <meta property="og:site_name" content="Arcane Syntax" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="On LET: a brief comparative thesis" />
+    <meta property="og:description" content="I started programming, as many people my age did, as a kid, with a computer running Microsoft BASIC. Disk Extended Color Basic on a Tandy Color Computer 3, to be precise. I wrote quite a few programs, large and small,..." />
+    <meta property="og:url" content="https://jarcane.github.io/2014/11/11/On-LET-a-brief-comparative-thesis.html" />
+    <meta property="article:published_time" content="2014-11-10T22:00:00.000Z" />
+    <meta property="article:modified_time" content="2015-07-03T20:23:58.675Z" />
+    <meta property="article:tag" content="Racket" />
+    <meta property="article:tag" content="programming" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="On LET: a brief comparative thesis" />
+    <meta name="twitter:description" content="I started programming, as many people my age did, as a kid, with a computer running Microsoft BASIC. Disk Extended Color Basic on a Tandy Color Computer 3, to be precise. I wrote quite a few programs, large and small,..." />
+    <meta name="twitter:url" content="https://jarcane.github.io/2014/11/11/On-LET-a-brief-comparative-thesis.html" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Arcane Syntax",
+    "author": {
+        "@type": "Person",
+        "name": "John Berry",
+        "image": "https://avatars.githubusercontent.com/u/8036258?v=3",
+        "url": "undefined/author/undefined",
+        "sameAs": "http://jarcane.github.com"
+    },
+    "headline": "On LET: a brief comparative thesis",
+    "url": "https://jarcane.github.io/2014/11/11/On-LET-a-brief-comparative-thesis.html",
+    "datePublished": "2014-11-10T22:00:00.000Z",
+    "dateModified": "2015-07-03T20:23:58.675Z",
+    "keywords": "Racket,  programming",
+    "description": "I started programming, as many people my age did, as a kid, with a computer running Microsoft BASIC. Disk Extended Color Basic on a Tandy Color Computer 3, to be precise. I wrote quite a few programs, large and small,..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost ?" />
+    <link rel="alternate" type="application/rss+xml" title="Arcane Syntax" href="https://jarcane.github.io/rss" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+</head>
+<body class="post-template tag-Racket tag-programming">
+
+    
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="https://jarcane.github.io">Home</a>
+        <!-- <a class="subscribe-button icon-feed" href="https://jarcane.github.io/rss/">Subscribe</a> -->
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post tag-Racket tag-programming">
+
+        <header class="post-header">
+            <h1 class="post-title">On LET: a brief comparative thesis</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2014-11-11">11 November 2014</time>  on <a href="https://jarcane.github.io/tag/Racket">Racket</a>, <a href="https://jarcane.github.io/tag/programming"> programming</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <div class="paragraph">
+<p>I started programming, as many people my age did, as a kid, with a
+computer running Microsoft BASIC. Disk Extended Color Basic on a Tandy
+Color Computer 3, to be precise. I wrote quite a few programs, large and
+small, as well as modding a few others that came on various Rainbow
+disks I&#8217;d cobbled together mostly from either the Internet or an uncle
+who was far more invested in the scene.</p>
+</div>
+<div class="paragraph">
+<p>Thus, when I at last discovered the introduction to macros and language
+definitions in <em>Realm of Racket</em>, it struck me that it might be
+interesting to practice those tools by experimenting with defining a
+BASIC-Lisp hybrid which I am tentatively tempted to entitle "Heresy".</p>
+</div>
+<div class="paragraph">
+<p>I&#8217;m still in the research stages right now, though I&#8217;m putting code to
+file today, and in researching how to map keywords from one to the other
+I discovered a very important clash: LET.</p>
+</div>
+<div class="paragraph">
+<p>Besides the obvious math operators and so forth, LET is one of the few
+standard keywords that exists in both BASIC and Lisp languages, but both
+could not possibly seem to describe more polar opposite functions.</p>
+</div>
+<div class="paragraph">
+<p>LET in BASIC is the somewhat deprecated global variable declarator and
+assigner. Ie.:</p>
+</div>
+<div class="paragraph">
+<p><code>LET X = 5</code></p>
+</div>
+<div class="paragraph">
+<p>LET in old-school BASIC is probably closer in function to the old Lisp
+keyword SETQ, in that it is used both to explicitly declare a new
+variable, but also to set that variable to a new value. It&#8217;s also
+distinct from DIM in that DIM was primarily used to declare arrays until
+much later dialects like QBasic and Visual Basic, and also because it
+must explicitly assign a value.</p>
+</div>
+<div class="paragraph">
+<p>LET in Lisp and Scheme however exist to provide temporary names for
+local values, usually within a function or a macro. They almost provide
+for variables what lambdas do for functions, and even allow the
+definition of new functions as well (either through explicit syntax for
+this, or by taking advantage of lambdas).</p>
+</div>
+<div class="paragraph">
+<p>And yet &#8230;&#8203; look back at that syntax for the BASIC version again. Both
+of these terms are coming from the same place: algebra. I am willing to
+bet that nearly everyone reading this write now has done at least one
+problem, probably thousands, that started with some statement of 'let x
+equal &#8230;&#8203;.' Wiktionary even cites this in the definition of the word as
+an example: "Let P be the point where AB and OX intersect."</p>
+</div>
+<div class="paragraph">
+<p>There is of course a reason for this. Lisp is famously based on Church&#8217;s
+lambda calculus, and its mathematical pedegree is hardly a secret.
+Dartmouth BASIC meanwhile was originally made mainly to help students do
+calculations for their homework assignments, the terminology springing
+directly from the pages of their algebra and trigonometry assignments.</p>
+</div>
+<div class="paragraph">
+<p>And it&#8217;s in this historical meeting point that we can ask ourselves a
+question, and answer it.</p>
+</div>
+<div class="paragraph">
+<p>Question: how did these two uses of LET evolve into such polar
+opposites? Answer: They didn&#8217;t. They both mean the same thing; it&#8217;s
+their approach to problem solving that&#8217;s different.</p>
+</div>
+<div class="paragraph">
+<p>Wait, what?</p>
+</div>
+<div class="paragraph">
+<p>It&#8217;s true. If you go back and look at the exercises and code samples and
+tools offered in the original Dartmouth BASIC, you realize something
+about what BASIC programs are meant to be, vs. how Lisp programs are
+generally approached. Dartmouth BASIC was written for tiny problems,
+word problems. The domain of a BASIC program was expected to be a single
+problem, and so the syntax and semantics both were constructed with that
+goal in mind.</p>
+</div>
+<div class="paragraph">
+<p>Lisp on the other hand, while it has diverged over the years into many
+approaches from the purely functional Clojure to the 'basically just
+rewritten C' of some Emacs-Lisp code, still fundamentally it comes
+instead from a logic that was about breaking down one big program into
+many littler problems, each of which may potentially need to define it&#8217;s
+own local variables.</p>
+</div>
+<div class="paragraph">
+<p>It&#8217;s not that LET necessarily means something different etymologically
+here, both creators were ultimately seeking to define the same tool, but
+the difference in how they actually work on a practical level and how
+they came to act as keywords in two very different ways, has more to do
+with how they approach problems as discrete pieces.</p>
+</div>
+<div class="paragraph">
+<p>In the past I&#8217;ve often defended BASIC, in part on the strength of the
+revisions made in more purely proceduraly dialects like QBasic, and in
+part because we BASIC 'hobbyists', shunned away as we were by the C
+coders and the elite ASM hackers of the day and since, really often
+could write code just as procedural and well thought out as any. It&#8217;s
+just that the dirty secret, what those sneering outsiders could see that
+we couldn&#8217;t, was just how much we were working <em>against</em> the language to
+do it. BASIC was asked, and somehow managed, to do things and solve
+problems far in advance of the scope for which it was ever designed.</p>
+</div>
+<div class="paragraph">
+<p>There is actually tail-call-optimization and code for writing recursive
+macros in <em>FreeBASIC</em> now (there are, amusingly enough, even a couple
+simple Lisp interpreters, even an embedded scripting language in Lisp
+for FB). Of course, this is in FB, a modern dialect of the QBasic branch
+with at least something more resembling a modern approach, but it still
+illustrates the fierce devotion that BASIC fans were almost <em>driven to</em>
+by their reputation in the wider community.</p>
+</div>
+<div class="paragraph">
+<p>These days of course, I look at even QBasic code and shudder to think,
+but then I also feel the same way looking at Java. And while Heresy
+kinda started as a joke esolang idea and may stay that way, it interests
+me to wonder if a "Lisp-flavored BASIC" might be a genuinely useful
+dialect for introducing those die-hard BASIC coders to the flexibility
+of a language that is not still fighting attempts to use it for more
+than solving simple algebraic equations.</p>
+</div>
+<div class="paragraph">
+<p>Of course, I still haven&#8217;t decided which definition of LET to stick to.</p>
+</div>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="" style="background-image: url(https://avatars.githubusercontent.com/u/8036258?v=3)"><span class="hidden">John Berry's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="">John Berry</a></h4>
+
+                    <p>Read <a href="">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    <span class="author-location icon-location">Finland</span>
+                    <span class="author-link icon-link"><a href="http://jarcane.github.com">http://jarcane.github.com</a></span>
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/share?text=On%20LET%3A%20a%20brief%20comparative%20thesis&amp;url=https://jarcane.github.io/2014/11/11/On-LET-a-brief-comparative-thesis.html"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://jarcane.github.io/2014/11/11/On-LET-a-brief-comparative-thesis.html"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=https://jarcane.github.io/2014/11/11/On-LET-a-brief-comparative-thesis.html"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+
+        <section class="post-comments">
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+          var disqus_shortname = 'jarcane'; // required: replace example with your forum shortname
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </section>
+
+
+    </article>
+
+</main>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="https://jarcane.github.io">Arcane Syntax</a> &copy; 2015</section>
+        <section class="poweredby">Proudly published with <a href="http://hubpress.io">HubPress</a></section>
+    </footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js?v="></script> 
+      <script type="text/javascript">
+        jQuery( document ).ready(function() {
+          // change date with ago
+          jQuery('ago.ago').each(function(){
+            var element = jQuery(this).parent();
+            element.html( moment(element.text()).fromNow());
+          });
+        });
+
+        hljs.initHighlightingOnLoad();      
+      </script>
+
+    <script type="text/javascript" src="//jarcane.github.io/themes/Casper/assets/js/jquery.fitvids.js?v=1.0.0"></script>
+    <script type="text/javascript" src="//jarcane.github.io/themes/Casper/assets/js/index.js?v=1.0.0"></script>
+
+</body>
+</html>
