@@ -1,0 +1,39 @@
+= First Rust project: wf
+:hp-tags: Rust, wf
+
+Perhaps one of the most exciting languages I've had hands on since Haskell, or maybe even Lisp, Rust has had my eye since at least 0.10. The promise of a C competitor systems language, with an ML-inspired type system, and lots of functional tools was intriguing as hell, and I kept an eye on it with an eye to checking things out once they settled down a little.
+
+With Rust 1.0 finally stable and released, I finally sat down a few weeks ago and started digging into the literature in my off hours. I dove into the brilliant http://rustbyexample.com/[Rust By Example] book, and couldn't stop reading. I literally read every last entry, fiddled with the code samples, and generally was excited more and more with every page. It's honestly one of the only programming books I've ever finished cover to cover (metaphorically speaking of course, what with it being an interactive web book and all). It's a brilliant piece of work, one of the best learning tools for a programming language I've seen.
+
+I of course followed it up with some readings from https://doc.rust-lang.org/book/[The Book], doing a few of the tutorials, as well as a few of the http://exercism.io[exercism] challenges, and bounced around thoughts for a few different project ideas.
+
+In the end, it was one of http://exercism.io/submissions/bcdad67b3093490c86801cd5ef43cba4[those exercism challenges] that gave me a good quick "weekend project" idea. The challenge was to write a function to count word frequencies, and I was proud enough of the resulting code to want to turn it into an actual utility.
+
+[[app-listing]]
+[code,rust]
+.word_count.rs
+----
+// Word count
+
+use std::collections::HashMap;
+
+pub fn word_count(s: &str) -> HashMap<String, u32> {
+    s.split(|c: char| !c.is_alphanumeric())
+        .filter( |s| !s.is_empty() )
+        .map(|s| { s.chars().flat_map(char::to_lowercase).collect::<String>() })
+        .fold(HashMap::new(), |mut m, i| {
+            *m.entry(i).or_insert(0u32) += 1;
+            m
+        })
+}
+----
+
+It turns out, there isn't actually a standard Unix utility for doing this, though it's possible through various pipelines with the existing tools, so I wrote one.
+
+wf (https://github.com/jarcane/wf[Github link]) is a simple Unix-style command-line utility in the spirit of https://en.wikipedia.org/wiki/Wc_%28Unix%29[wc] that takes a stream of text on stdin, and returns a list of word frequencies. In total, it's only about 120 lines of pure Rust, and even includes a couple options (for counting or skipping numbers, and even sorting). No man-page or install script yet; I don't actually have a *nix install at the moment, so it'd be hard to test, but if anyone wants to bundle it up themselves I'm happy to take pull requests or suggestions.
+
+In general, I am left with just as much enthusiasm for Rust as I had when I started. There's some odd quirks to it, in particular it's not always strictly possible to follow a purely functional style; there's still some methods in the standard lib that are purely imperative in nature or require mutation. The memory model takes some getting used to as well, and I still find myself battling with the compiler sometimes, but crucially I generally find that once I find the solution (or get help with it, more on that in a moment), it almost always makes perfect sense.
+
+In general though, it's a cool language. It feels like C hacking, but with all the functional and type system toys I love, and as a result manages to trip every happy button in my little programmer brain at once in a way no language has since Racket. Everything largely feels http://graydon2.dreamwidth.org/218040.html[very well thought out], largely lacking in weird niggles and shoot-your-foot surprises.
+
+Perhaps the best part for me too has been the community. The Rust team have committed to creating a very welcoming, helpful environment, and it has paid dividends. If I have a question, someone will answer, promptly, and courteously, 
