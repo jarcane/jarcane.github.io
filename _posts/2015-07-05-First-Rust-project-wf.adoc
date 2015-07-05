@@ -36,4 +36,7 @@ In general, I am left with just as much enthusiasm for Rust as I had when I star
 
 In general though, it's a cool language. It feels like C hacking, but with all the functional and type system toys I love, and as a result manages to trip every happy button in my little programmer brain at once in a way no language has since Racket. Everything largely feels http://graydon2.dreamwidth.org/218040.html[very well thought out], largely lacking in weird niggles and shoot-your-foot surprises.
 
-Perhaps the best part for me too has been the community. The Rust team have committed to creating a very welcoming, helpful environment, and it has paid dividends. If I have a question, someone will answer, promptly, and courteously, 
+Perhaps the best part for me too has been the community. The Rust team have committed to creating a very welcoming, helpful environment, and it has paid dividends. If I have a question, someone will answer, and even be willing to walk me through things. It's amazing. 
+
+Honestly, the whole ecosystem just feels like Rust has nailed on all fronts "what programming is supposed to be like" as well as anyone could.
+
