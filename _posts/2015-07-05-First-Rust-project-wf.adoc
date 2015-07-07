@@ -1,7 +1,7 @@
 = First Rust project: wf
 :hp-tags: Rust, wf
 
-Perhaps one of the most exciting languages I've had hands on since Haskell, or maybe even Lisp, Rust has had my eye since at least 0.10. The promise of a C competitor systems language, with an ML-inspired type system, and lots of functional tools was intriguing as hell, and I kept an eye on it with an eye to checking things out once they settled down a little.
+Perhaps one of the most exciting languages I've had hands on since Haskell, or maybe even Lisp, Rust has had my eye since at least 0.10. The promise of a C competitor systems language, with an ML-inspired type system, and lots of functional tools was intriguing as hell, and I've kept watch for a stable release, intent on checking things out once they settled down a little.
 
 With Rust 1.0 finally stable and released, I finally sat down a few weeks ago and started digging into the literature in my off hours. I dove into the brilliant http://rustbyexample.com/[Rust By Example] book, and couldn't stop reading. I literally read every last entry, fiddled with the code samples, and generally was excited more and more with every page. It's honestly one of the only programming books I've ever finished cover to cover (metaphorically speaking of course, what with it being an interactive web book and all). It's a brilliant piece of work, one of the best learning tools for a programming language I've seen.
 
@@ -34,7 +34,7 @@ wf (https://github.com/jarcane/wf[Github link]) is a simple Unix-style command-l
 
 In general, I am left with just as much enthusiasm for Rust as I had when I started. There's some odd quirks to it, in particular it's not always strictly possible to follow a purely functional style; there's still some methods in the standard lib that are purely imperative in nature or require mutation. The memory model takes some getting used to as well, and I still find myself battling with the compiler sometimes, but crucially I generally find that once I find the solution (or get help with it, more on that in a moment), it almost always makes perfect sense.
 
-In general though, it's a cool language. It feels like C hacking, but with all the functional and type system toys I love, and as a result manages to trip every happy button in my little programmer brain at once in a way no language has since Racket. Everything largely feels http://graydon2.dreamwidth.org/218040.html[very well thought out], largely lacking in weird niggles and shoot-your-foot surprises.
+In general though, it's a cool language. It feels like C hacking, but with all the functional and type system toys I love, and as a result manages to trip every happy button in my little programmer brain at once in a way no language has since Racket. Everything largely feels http://graydon2.dreamwidth.org/218040.html[very well thought out], lacking quite so many weird niggles and shoot-your-foot surprises.
 
 Perhaps the best part for me too has been the community. The Rust team have committed to creating a very welcoming, helpful environment, and it has paid dividends. If I have a question, someone will answer, and even be willing to walk me through things. It's amazing. 
 
