@@ -3,6 +3,7 @@
 
 _The following is cross posted from this https://www.reddit.com/r/rust/comments/3cl12r/is_rust_too_complicated/csxcbt1?context=1[reddit thread]. I really suggest you read it, both Steve and eddyb's posts, they're great stuff._
 
+====
 [quote, Steve Klabnik]
 ____
 To determine what "too complicated" even means, you have to ask "for what"?
@@ -13,7 +14,7 @@ Rust's core mission is something that has inherent complexity. I think we've don
 
 I believe in people, personally.
 ____
-
+====
 
 Here's the thing that touches me about "I believe in people": It's not about 'dumbing down' or not, it's about how you respect the learner.
 
