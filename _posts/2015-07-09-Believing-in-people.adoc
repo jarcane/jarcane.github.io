@@ -14,6 +14,7 @@ Rust's core mission is something that has inherent complexity. I think we've don
 I believe in people, personally.
 ____
 
+
 Here's the thing that touches me about "I believe in people": It's not about 'dumbing down' or not, it's about how you respect the learner.
 
 I have been programming again for a year now. Before that, I hadn't touched anything more than a few trivial BASIC and Python programs in nearly a decade and a half. I've essentially had to relearn programming all over again, and because of the way my brain works, I've dabbled in a *lot* of languages and dealt with a lot of different approaches to learning a language in order to do that. I've done everything from interactive tutorials, to koans, to books, to good old-fashioned "type in the code from the guide" stuff, in no less than half a dozen languages.
