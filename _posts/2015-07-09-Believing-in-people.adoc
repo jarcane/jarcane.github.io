@@ -1,0 +1,37 @@
+= Believing in people
+:hp-tags: Rust, learning
+
+_The following is cross posted from this https://www.reddit.com/r/rust/comments/3cl12r/is_rust_too_complicated/csxcbt1?context=1[reddit thread]. I really suggest you read it, both Steve and eddyb's posts, they're great stuff._
+
+[quote, Steve Klabnik]
+____
+To determine what "too complicated" even means, you have to ask "for what"?
+
+Rust's core mission is something that has inherent complexity. I think we've done a good job of not adding additional complexity beyond that, personally. I would argue Rust is simpler than C++, which is widely used.
+
+    is rust is planned to be used by average developer
+
+I believe in people, personally.
+____
+
+Here's the thing that touches me about "I believe in people": It's not about 'dumbing down' or not, it's about how you respect the learner.
+
+I have been programming again for a year now. Before that, I hadn't touched anything more than a few trivial BASIC and Python programs in nearly a decade and a half. I've essentially had to relearn programming all over again, and because of the way my brain works, I've dabbled in a *lot* of languages and dealt with a lot of different approaches to learning a language in order to do that. I've done everything from interactive tutorials, to koans, to books, to good old-fashioned "type in the code from the guide" stuff, in no less than half a dozen languages.
+
+Something I think Rust gets right, the community, the book, even the compiler, is that it does believe in you, but it also doesn't expect you to just "get it" overnight. 
+
+There is a tone to the literature, to the compiler messages, to the IRC channel, which is this: "we understand." 
+
+Rust is a language that has taken some of the best ideas of programming, and added on top of them some very clever ideas of its own, ideas that take some thinking to get your head around. 
+
+And it feels to me, like everyone knows this, and *hasn't forgotten that.* The single hardest thing about teaching anything is understanding just exactly how much you've internalized and forgotten that you even know.
+
+Perhaps this is simply because it's a young language yet, and to some extent even the team developing Rust itself is still sort of learning what Rust is and is to be.
+
+But I don't think it's just that. 
+
+I've yet to feel stupid programming in Rust. I've yet to feel like "oh, dummy, you should've known that." I've yet to feel embarrassed for not knowing something or not puzzling it out on my own. When I read the books, the tone that comes across is "Yeah, this is a little tricky, but don't worry if you don't get it the first time. You'll get it in time." When I ask in the channel, I get prompt and helpful answers, not just to my question, but often to what it means and why. As if there's an acknowledgement that every such question is an opportunity to teach, an expected event, instead of a mutual nuisance to be exchanged in the hopes someone else will return the favor later.
+
+There's a collective impression that programming is challenging, the ideas Rust presents are something a bit new, and everyone's gone through their share of puzzling through how it works. No one's going to judge you in the slightest for not getting it the first time, but everyone believes you can do it, and wants to help you get to that moment that is by now already probably familiar to many Rust programmers where the little light bulb goes on and you go "oh! That makes perfect sense. Thanks."
+
+Part of truly believing in someone is helping them see through their failures to the successes they're capable of. I hope this community never loses that, because it's something special.
