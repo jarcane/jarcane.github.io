@@ -23,14 +23,14 @@ as the book uses it.
 For reference, the Haskell recursive quicksort looks like this:
 
 [code,haskell]
--------------------------------------------------------
+----
 quicksort :: (Ord a) => [a] -> [a]
 quicksort [] = []
 quicksort (x:xs) =
     let smallerSorted = quicksort [a | a <- xs, a <= x]
         biggerSorted = quicksort [a | a <- xs, a > x]
     in smallerSorted ++ [x] ++ biggerSorted
--------------------------------------------------------
+----
 
 I know, right? It's short and sweet, and using multiple recursion and
 list filtering to solve it takes a hell of a lot of the work out of it.
@@ -51,7 +51,7 @@ semantically it's _almost_ identical [but not quite, and I'll get to
 why]).
 
 [code,scheme]
-------------------------------------------------------------------
+----
 (define (qs lst)
   (if (empty? lst)
       lst
@@ -60,7 +60,7 @@ why]).
              (smaller (qs (for/list ((i tl) #:when (<= i hd)) i)))
              (larger (qs (for/list ((i tl) #:when (> i hd)) i))))
          (flatten (cons smaller (cons hd larger))))))
-------------------------------------------------------------------
+----
 
 So clearly, it's not exactly the _recursion_ that makes the example so
 cool. No, what makes the Haskell version cool is when you realize what
@@ -68,7 +68,10 @@ it can do that our Racket port can't: anything but numbers. The Haskell
 quicksort can readily handle numbers, strings, or lists of chars, all
 thanks to the power of this line right here:
 
-`quicksort :: (Ord a) => [a] -> [a]`
+[code,haskell]
+----
+quicksort :: (Ord a) => [a] -> [a]
+----
 
 _Especially_ the `(Ord a)` bit: that's the Ord typeclass, which imports
 types that Haskell knows how to put in order, thus allowing a statically
@@ -80,7 +83,7 @@ To be able to get a similarly powerful, if not as convenient function,
 we have to upgrade our Racket version a bit:
 
 [code,scheme]
-----------------------------------------------------------------------------
+----
 (define (qs-2 fun lst)
   (if (empty? lst)
       lst
@@ -89,7 +92,7 @@ we have to upgrade our Racket version a bit:
              (smaller (qs (for/list ((i tl) #:when (fun i hd)) i)))
              (larger (qs (for/list ((i tl) #:when ((negate fun) i hd)) i))))
         (flatten (cons smaller (cons hd larger))))))
-----------------------------------------------------------------------------
+----
 
 Now our Racket quicksort has become a higher-order function, and must be
 passed the less-than function it will use to find _smaller_ as well as
