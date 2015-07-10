@@ -50,7 +50,7 @@ lines (most of them in this case for clarity and convenience,
 semantically it's _almost_ identical [but not quite, and I'll get to
 why]).
 
-[code,scheme,highlightjs]
+[code,scheme]
 ----
 (define (qs lst)
   (if (empty? lst)
