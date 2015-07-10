@@ -2,7 +2,7 @@
 = Haskell is Cool
 :published_at: 2014-10-03
 :hp-tags: Haskell, Racket
-
+:source-highlighter: highlightjs
 
 After my last post and some thinking, I ultimately settled on _Learn You
 a Haskell_ as my next book to work through, and after some initial
