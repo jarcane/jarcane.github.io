@@ -3,6 +3,8 @@
 
 _The following is cross posted from this https://www.reddit.com/r/rust/comments/3cl12r/is_rust_too_complicated/csxcbt1?context=1[reddit thread]. I really suggest you read it, both Steve and eddyb's posts, they're great stuff._
 
+_This post has since also been quoted by http://www.infoworld.com/article/2947214/open-source-tools/two-reasons-the-rust-language-will-succeed.html[InfoWorld]._
+
 ====
 ____
 To determine what "too complicated" even means, you have to ask "for what"?
@@ -38,3 +40,4 @@ I've yet to feel stupid programming in Rust. I've yet to feel like "oh, dummy, y
 There's a collective impression that programming is challenging, the ideas Rust presents are something a bit new, and everyone's gone through their share of puzzling through how it works. No one's going to judge you in the slightest for not getting it the first time, but everyone believes you can do it, and wants to help you get to that moment that is by now already probably familiar to many Rust programmers where the little light bulb goes on and you go "oh! That makes perfect sense. Thanks."
 
 Part of truly believing in someone is helping them see through their failures to the successes they're capable of. I hope this community never loses that, because it's something special.
+
