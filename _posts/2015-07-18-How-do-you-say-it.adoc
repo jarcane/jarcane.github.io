@@ -59,4 +59,5 @@ Before the 2000 election, one of the biggest political issues in the world of te
 
 With the election coming up, and the internet for the first time a real force that might turn the tide of it, there was a lot of interest in some powerful new tools, one of which was a search engine for campaign finances. You could punch in the name of a candidate, and find out who was giving them money. You could even punch in the name of a company, and it would tell you what candidates they gave money to.
 
-Naturally of course, the first company I thought to enter 
+Naturally of course, the first company I thought to enter was Microsoft. 
+
