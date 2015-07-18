@@ -13,7 +13,7 @@ After some time of this, when she had returned and asked me what was the matter,
 My wife suggested that this was merely the depression talking. As Vonnegut might've said, my brain was producing bad chemicals again. 
 
 
-[center]#\***#
+[align="center"]#\***#
 
 The cat doesn't like me.
 
@@ -31,7 +31,7 @@ It didn't matter. From the moment I saw its face all I could think was "I've got
 
 So we did. 
 
-[center]#\***#
+[align="center"]#\***#
 
 In my life time, there has never been a political party or leader or government in power which I can describe as properly left-wing.
 
@@ -41,7 +41,7 @@ America is a classist society at heart, which tells fairy tails of a classless o
 
 That is the country I grew up in.
 
-[center]#\***#
+[align="center"]#\***#
 
 When I was in school, I had a social studies teacher. His name was Jim Erickson. He was of Scandinavian descent, if I recall correctly, which perhaps goes to explain why he was the first and only teacher I ever had in my life to introduce me to the concept of democratic socialism, as it was called in those days.
 
@@ -51,7 +51,7 @@ Mr. Erickson taught us, for the first time in my young life, that there was more
 
 And it's only gotten worse, as long as I have been alive. Reagan must be dancing in his grave.
 
-[center]#\***#
+[align="center"]#\***#
 
 I dreamed of living in one of those countries, even as a boy. I knew my place in the world, knew my government. Even then I had no hope. I watched my first election play out, a choice between a robot and an idiot, both of whom were taking the same amount of money from the same companies and rich benefactors. 
 
@@ -67,7 +67,7 @@ The 2000 election came and went. The government stopped bothering Microsoft. And
 
 Imagine that.
 
-[center]#\***#
+[align="center"]#\***#
 
 Today I actually do live in one of those countries. I have socialized medicine, such as it is, and an unemployment system that is paying me to intern at a Finnish software consultancy, and to study the Finnish language.
 
@@ -89,7 +89,7 @@ My home country is engaged in bitter debate about the flag of a dead racist rebe
 
 We'll have a world war next. You can bet on it.
 
-[center]#\***#
+[align="center"]#\***#
 
 A while back I wrote a short review of Kurt Vonnegut's _Breakast of Champions_, in which I professed to be, as Vonnegut was, https://jarcane.github.io/2015/02/01/A-Man-Without-a-Country.html[a man without a country].
 
@@ -103,13 +103,13 @@ The whole planet seems to be inexorably sliding towards fascism once more, and I
 
 I surround myself with other people who themselves are screaming but, what can we do? We scream and wail but, we do nothing else. 
 
-We have become so callous as a species that we send machines to do our killing for us, rather than bother to make the effort ourselves, and then we automate the report of our automated atrocities in http://www.dronestre.am/[onvenient Tweet-sized form.]
+We have become so callous as a species that we send machines to do our killing for us, rather than bother to make the effort ourselves, and then we automate the report of our automated atrocities in http://www.dronestre.am/[convenient Tweet-sized form.]
 
 Such perfect monsters we are!
 
 Half of us commit unspeakable atrocities, while the rest are satisfied, or at least mollified, with merely disapproving of them.
 
-But again, what can we do? Rise up in the streets? Take to arms and draw the blood and fill the streets with the guts of the ruling class? And thus become just another generation of self-justified monsters once more?
+But again, what can we do? Rise up in the streets? Take to arms and fill the streets with the blood and guts of the ruling class, and thus become just another generation of self-justified monsters?
 
 I should think not, though at times, I do hope nonetheless.
 
