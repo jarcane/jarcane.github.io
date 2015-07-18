@@ -4,7 +4,7 @@
 [.lead]
 I cried this morning. 
 
-I didn't know precisely why even, at the time. I was attempting moments before to look up options for our next meal on the internet. My wife stepped out on to the balcony, and while she was out there, I started weeping. 
+I didn't know precisely why even, at the time. Moments before I had been attempting to look up options for our next meal on the internet. My wife stepped out on to the balcony, and while she was out there, I started weeping. 
 
 After some time of this, when she had returned and asked me what was the matter, and I had managed to pull myself together enough to croak out a response, I said this:
 
@@ -25,9 +25,9 @@ Then the next night, she was terrified of me, and ran from the room at every app
 
 I suspect the cat has suffered some trauma in her previous home. We purchased her from a woman with very Russian-inflected English who held her, or rather attempted to hold her, for the entire visit.
 
-I have never in my life seen a cat that more clearly did not want to be where it was than at that moment. The woman gave us the hard sell, of course, telling us how it was her daughters (whom we've never met face to face), and how the daughter moved in with a boyfriend whose young male cat was mean to it. 
+I have never in my life seen a cat that more clearly did not want to be where it was than at that moment. The woman gave us the hard sell, of course, telling us how it was her daughter's (whom we've never met face to face), and how the daughter moved in with a boyfriend whose young male cat was mean to it. 
 
-It didn't matter. From the moment I saw its face all I could think was "I've got to get this poor thing the hell out of here!" If I didn't, who would? What would happen to it? There was so much fear and discomfort in it. It needed to be rescued.
+It didn't matter. From the moment I saw its face, wide eyed and squirming against the grasp of this strange woman, all I could think was "I've got to get this poor thing the hell out of here!" If I didn't, who would? What would happen to it? There was so much fear and discomfort in it's eyes. It needed to be rescued.
 
 So we did. 
 
@@ -35,7 +35,7 @@ So we did.
 
 In my life time, there has never been a political party or leader or government in power which I can describe as properly left-wing.
 
-In my home country, one has the choice between an obstructionist far-right party, and an ineffectual moderate-right party that inevitably makes a show of things but then caves to the demands of the former. Largely, this is because both parties take money in great quantities from the same very rich people, in order to fund their campaigns. So nothing ever changes on any meaningful level, it just gets worse, as the arms race for campaign expenditure only puts them more and more in the pockets of the very rich people. This is OK by them, however, because by and large most of them are very rich people themselves. 
+In my home country, one has the choice between an obstructionist far-right party, and an ineffectual moderate-right party that inevitably makes a show of things but then caves to the demands of the former. Largely, this is because both parties take money in great quantities from the same very rich people, in order to fund their campaigns. So nothing ever changes on any meaningful level, it just gets worse, as the arms race for campaign expenditure only puts them more and more in the pockets of the same very rich people. This is OK by them, however, because by and large most of the people elected are very rich people themselves. 
 
 America is a classist society at heart, which tells fairy tails of a classless one in order to keep the poor from complaining too much about the ruling class. And if they dare, they call them communists, or socialists, or anarchists, and send armed men to beat them up should they demonstrate in too great a number. 
 
@@ -47,9 +47,9 @@ When I was in school, I had a social studies teacher. His name was Jim Erickson.
 
 Nowadays of course, the term "social democracy" is often preferred, because "socialism" has been turned into a word so dirty that many people used it against the current president and his ruling party for suggesting that maybe the health care system of the United States might be a little less inclined towards reducing people to poverty and bankruptcy because they were sick.
 
-Mr. Erickson taught us, for the first time in my young life, that there was more to the decisions of economy and government than blind faith in "free enterprise". He taught us the concept of income inequality, showing us with stark clarity not only the difference in income between rich and poor in our country, but the just how wide that difference was compared to other countries. That the notion of a "free country" was not predicated solely on how mindbogglingly rich one could be come at the expense of others, but that there were other countries that were just as democratic but where the gap between the rich and poor was not so vast. That in fact, the gap in our country had become almost insurmountable.
+Mr. Erickson taught us, for the first time in my young life, that there was more to the decisions of economy and government than blind faith in "free enterprise". He taught us the concept of income inequality, showing us with stark clarity not only the difference in income between rich and poor in our country, but just how wide that difference was compared to other countries. He showed us that the notion of a "free country" was not predicated solely on how mindbogglingly rich one could be come at the expense of others, but that there were other countries that were just as democratic but where the gap between the rich and poor was not so vast. That in fact, the gap in our country had become almost insurmountable, and it might be far more "free" to help everyone have a level playing field.
 
-And it's only gotten worse, as long as I have been alive. Reagan must be dancing in his grave.
+Yet it's only gotten worse, as long as I have been alive. Reagan must be dancing in his grave.
 
 ***
 
@@ -57,11 +57,11 @@ I dreamed of living in one of those countries, even as a boy. I knew my place in
 
 Before the 2000 election, one of the biggest political issues in the world of technology was United States v. Microsoft. For the first time since Ma Bell, the federal government was going after a monopoly for once, and to boot: they won! In June of 2000, the judge in that case even ordered a breakup of Microsoft.
 
-With the election coming up, and the internet for the first time a real force that might turn the tide of it, there was a lot of interest in some powerful new tools, one of which was a search engine for campaign finances. You could punch in the name of a candidate, and find out who was giving them money. You could even punch in the name of a company, and it would tell you what candidates they gave money to.
+With the election coming up, and the internet for the first time a real force that might turn the tide of it, there was a lot of interest in some powerful new tools, one of which was a search engine for campaign finances. You could punch in the name of a candidate, and find out who was giving them money. You could punch in the name of a company, and it would tell you what candidates they gave money to.
 
 Naturally of course, the first company I thought to enter was Microsoft. 
 
-They had of course, given money to both parties. In fact, they'd given almost exactly the same amount to both parties, within only a couple of thousand dollars. The margin was so close that to this day I'm not sure I could tell you which one.
+They had given money to both parties. In fact, they'd given almost exactly the same amount to both parties, within only a couple of thousand dollars. The margin was so close that to this day I'm not sure I could tell you which one.
 
 The 2000 election came and went. The government stopped bothering Microsoft. And that breakup never happened.
 
@@ -71,7 +71,7 @@ Imagine that.
 
 Today I actually do live in one of those countries. I have socialized medicine, such as it is, and an unemployment system that is paying me to intern at a Finnish software consultancy, and to study the Finnish language.
 
-And yet, this year my adopted country also elected a centre-right government in coalition with the local racist party and the austerity party that had been in theory ousted. To add insult to injury, they even made the former PM a minister in the new coalition. And they put the racist party leader in charge of foreign policy.
+And yet, this year my adopted country also elected a centre-right government in coalition with the local racist party and the same austerity party that had been, in theory, ousted. To add insult to injury, they even made the former PM a minister in the new coalition. And they put the racist party leader in charge of foreign policy.
 
 The ruling party, meanwhile, have the vice president of the EU among their ranks, and the coalition as a whole is wholly committed to the unending economic atrocity being committed in Greece.
 
@@ -79,11 +79,11 @@ The government of one of the lesser lights of the great Nordic system is current
 
 Some social democracy. 
 
-Elsewhere in Europe, there are actual fascist parties rising up again all over the continent. Anti-immigration sentiment is at an all time high. The great liberal paradises of the North are home to racist parties and politicians who whine about scroungers as if they were Tories.
+Elsewhere in Europe, there are actual fascist parties rising up again all over the continent. Anti-immigration sentiment is at an all time high. The great liberal paradises of the North are home to racist parties and politicians who whine about "scroungers" as if they were Tories.
 
-The Tories, meanwhile, are unaccountably in power still, having somehow squashed a possible challenge from the actually social democratic SNP party by banging on about nationalism and posting reddit-esque photoshops of the Labour and SNP leaders on the front pages of newspapers, even as those same papers routinely pay homage to to pint-swilling national fascist icon Nigel Farage. 
+The Tories, meanwhile, are unaccountably in power still, having somehow squashed a possible challenge from the actually social democratic SNP party by banging on about nationalism and posting reddit-esque photoshops of the Labour and SNP leaders on the front pages of newspapers, even as those same papers routinely pay homage to pint-swilling national fascist icon Nigel Farage. 
 
-The Russians have decended into open fascism with gays as their personal scapegoat, and have even taken steps to secure their own Sudetenland. 
+The Russians have descended into open fascism with Putin as their Great dictator, and gays as their personal scapegoat. They have even taken steps to secure their own Sudetenland by annexing increasingly large sections of Ukraine. 
 
 My home country is engaged in bitter debate about the flag of a dead racist rebellion, even as its police officers murder black people with impunity on the streets. An election is coming soon, one with, at the moment, the first genuinely liberal politician since FDR running for office, and who has thus naturally been repeatedly made to look like a mad person and a fool. 
 
@@ -99,9 +99,11 @@ Oh for sure, I do still feel as I did then and have for many years that the nati
 
 I am not just without a country though, I am without even anyone in some other country who even remotely represents me. The fabled "Founding Fathers" allegedly waged war on the basis of "taxation without representation," yet here I am today in a world where there's not one party of any real power or influence it seems anywhere in the world that remotely represents what I believe.
 
-The whole planet seems to be inexorably sliding towards fascism once more, and I find myself wondering if this is what it felt like in 1930. The whole world has gone mad again, and I am just one man without voice, power, or influence to do one thing to stop the oncoming storm, nonetheless driven at times to want to scream, or cry, as I did this morning.
+The whole planet seems to be inexorably sliding towards fascism once more, and I find myself wondering if this is what it felt like in the 1930s. The whole world has gone mad again, and I am just one man without voice, power, or influence to do one thing to stop the oncoming storm, nonetheless driven at times to want to scream. 
 
-I surround myself with other people who themselves are screaming but, what can we do? We scream and wail but, we do nothing else. 
+Or cry, as I did this morning.
+
+I surround myself with other people who themselves are screaming but, what can we do? We scream and wail but, we do little else. 
 
 We have become so callous as a species that we send machines to do our killing for us, rather than bother to make the effort ourselves, and then we automate the report of our automated atrocities in http://www.dronestre.am/[convenient Tweet-sized form.]
 
