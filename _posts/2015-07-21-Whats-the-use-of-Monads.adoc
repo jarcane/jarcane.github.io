@@ -1,0 +1,33 @@
+= What's the use of Monads?
+:hp-tags: Haskell, functional, Heresy
+
+_The following was originally posted on https://news.ycombinator.com/item?id=9920860[HN]._
+
+____
+OK, go on, explain what else it is, rather than accidental convention of how to ensure an order of evaluation of a pair of expressions in a particular lazy pure-functional language?
+
+Erlang, for example, being functional but strict language, requires no monads. So does Standard ML. In these languages a monads would be a useless, redundant abstraction which will only clutter the code. 
+____
+
+Do notation.
+
+Haskell's do notation is syntactic sugar over monads which effectively allows you to write 'imperative-looking' code while still carrying a local state forward without mutation. The https://en.wikibooks.org/wiki/Haskell/do_notation[Wikibook] does a pretty good example of explaining what this looks like (though I'm guessing you already know this).
+
+Now, obviously it is true that *one* of do notation's advantages is the same as any other monad usage: it allows us to explicitly sequence events in a lazy language that otherwise offers no (obviously intuitive) guarantees on evaluation order. In that sense it's nothing more than sugaring over the otherwise necessary usage of a lot of ugly `>>` and `>>=` operators everywhere in increasingly annoying indentation.
+
+But the other thing it offers is a syntactic sugaring over carrying state forward into successive computations (like the https://wiki.haskell.org/State_Monad[State monad]), which still carries at least some useful sweetness in a language that is otherwise functionally pure, which is why F# generalized the concept even further to http://tomasp.net/blog/2013/computation-zoo-padl/[computation expressions].
+
+Looked at another way, do notation, or something like it, can be used to sugar over something that rather more looks like the Clojure `->` and `->>` operators, where the initial value is essentially a local namespace. Much like the threading macros, the result even *appears* to be doing a kind of mutation, even though it's actually doing nothing of the sort. 
+
+This kind of thing turns out to be useful for games, for instance, as the linked State monad example above does. In games we often have a main update loop, where we have to do several successive operations on our game that might change the state. We can do this a number of ways, but one way is with something like do notation, where for instance (in some hypothetical language) we might do this: 
+
+  do with gameState
+    oldGame <- gameState
+    gameState <- checkInput
+    gameState <- tick
+    if gameState != oldGame
+      draw
+
+And all of this kind of "fake mutation" can be handled underneath the sugar in a purely functional manner. It's something I've been meaning to put into Heresy for some time. Heresy uses continuation based loops that have a "carry value", that can be passed from one cycle to the next. It's a simple matter of some macro magic to then layer over this some syntax sugar that makes that carry value effectively a name space, that can be altered from one statement to the next, but all entirely without actual mutation underneath.
+
+You can write whole imperative, mutation-riddled languages in purely functional ones this way. There's even http://augustss.blogspot.fi/2009/02/is-haskell-fast-lets-do-simple.html[an implementation of BASIC] that runs in the Haskell do notation.
