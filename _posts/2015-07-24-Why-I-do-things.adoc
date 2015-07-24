@@ -1,0 +1,5 @@
+= Why I do things
+:hp-tags: personal
+
+A thread on HN asks, https://news.ycombinator.com/item?id=9936544["Why do you want to achieve something?"] This particular answer struck a chord:
+
