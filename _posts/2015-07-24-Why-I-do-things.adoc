@@ -1,5 +1,11 @@
 = Why I do things
 :hp-tags: personal
 
-A thread on HN asks, https://news.ycombinator.com/item?id=9936544["Why do you want to achieve something?"] This particular answer struck a chord:
+A thread on HN asks, https://news.ycombinator.com/item?id=9936544["Why do you want to achieve something?"] This https://news.ycombinator.com/item?id=9939147[particular answer] struck a chord:
+
+____
+Honestly, it's the growing realization that despite all of my efforts, I haven't done anything worth feeling proud of. To me that feels like I've lived a waste of a life.
+
+As you can tell, this is an ineffective strategy for motivation.
+____
 
