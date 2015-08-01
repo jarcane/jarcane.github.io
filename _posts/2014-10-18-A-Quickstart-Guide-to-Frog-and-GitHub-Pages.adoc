@@ -33,7 +33,7 @@ is available in your command-line path. Unixen should take care of this
 automatically, but Windows will need it added to the $PATH if we want
 this to be a painless process. You'll need to go to the System Control
 Panel, Advanced System Settings, Environment Variables, and edit Path to
-include "C:Files" for 64-bit Racket or "C:Files (x86)" for 32-bit.
+include "C:\Program Files\Racket" for 64-bit Racket or "C:\Program Files (x86)\Racket" for 32-bit.
 
 [[step-2-install-frog]]
 Step 2: Install Frog
