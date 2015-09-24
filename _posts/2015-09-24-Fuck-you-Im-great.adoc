@@ -10,4 +10,11 @@ When I first got back into programming, I was pleasantly surprised to discover t
 
 At one point, after listening to a lot of Neil Gaiman and feeling the high of the newbie functional programmer who feels like he's working some kind of sorcery whenever he writes a curried function, I'd even started a weird piece of urban fantasy fiction about forgotten gods who've learned the language of the universe itself, hiding out as Lisp gurus in unassuming office blocks.
 
-But the days of "programming is magic" seem ever numbered for most programmers, myself not excluded. Over time, programming takes on a different, darker hue. Oh for sure there are still moments where you find some clever bit that someone else has coded, or come up with some clever function of your own, that the old wizardry shines through. But then you have one of those days where you fight CSS bugs for an entire work day, or have to Google a function you could swear you just used yesterday, or have a bit of code refuse to work despite being identical to at least a dozen other bits of code in the same file.
+But the days of "programming is magic" seem ever numbered for most programmers, myself not excluded. Over time, programming takes on a different, darker hue. Oh for sure there are still moments where you find some clever bit that someone else has coded, or come up with some clever function of your own, that the old wizardry shines through. But then you have one of those days where you fight CSS bugs for an entire work day, or have to Google a function you could swear you just used yesterday, or have a bit of code refuse to work despite being identical to at least a dozen other bits of code in the same file. 
+
+That's when the lights start to flicker.
+
+Perhaps the more accurate phrase is "programming is gaslighting."
+
+***
+
