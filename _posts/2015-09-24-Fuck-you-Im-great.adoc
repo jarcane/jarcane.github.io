@@ -1,3 +1,8 @@
 = Fuck you, I'm great
 :hp-tags: personal
 
+++++
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Hey new dev - think you&#39;re dumb? I struggled for 2 hours yesterday because I forgot how a single HTML tag works. We all make mistakes. ❤</p>&mdash; 10x Pro Grammar (@kerrizor) <a href="https://twitter.com/kerrizor/status/646699976911814656">September 23, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+++++
+
