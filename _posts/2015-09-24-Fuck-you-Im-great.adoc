@@ -6,3 +6,5 @@
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 ++++
 
+When I first got back into programming, I was pleasantly surprised to discover that after all these years I still rather enjoyed it. When I then discovered, and finally understood, Lisp and functional programming, it blew my mind. It felt like magic; here was a way of doing programming that had actually thought hard about how to abstract away much of the tedium, and how to compose those abstractions in powerful ways that made the old days of structured QBasic and even modern Python feel like going back to the stone ages. 
+
