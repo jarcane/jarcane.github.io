@@ -8,3 +8,5 @@
 
 When I first got back into programming, I was pleasantly surprised to discover that after all these years I still rather enjoyed it. When I then discovered, and finally understood, Lisp and functional programming, it blew my mind. It felt like magic; here was a way of doing programming that had actually thought hard about how to abstract away much of the tedium, and how to compose those abstractions in powerful ways that made the old days of structured QBasic and even modern Python feel like going back to the stone ages. 
 
+At one point, after listening to a lot of Neil Gaiman and feeling the high of the newbie functional programmer who feels like he's working some kind of sorcery whenever he writes a curried function, I'd even started a weird piece of urban fantasy fiction about forgotten gods who've learned the language of the universe itself, hiding out as Lisp gurus in unassuming office blocks.
+
