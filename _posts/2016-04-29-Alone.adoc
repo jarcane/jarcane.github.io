@@ -17,7 +17,7 @@ I was 31 years old before I had my first relationship.
 32 before I first made love.
 
 
-[quote, Rebecca Hersher, http://www.npr.org/sections/goatsandsoda/2016/04/21/474847921/the-arctic-suicides-its-not-the-dark-that-kills-you[The Arctic Suicides]]
+[quote]
 ____
 "Some people, they are raised with a lot of love," she explains, "but some people are not. And these people who didn't get love in their childhood, when they meet a partner, they try to hold onto him like they own him. They think that this one person, they can only love him and he is the only one who will ever love them. And when they break up, the person feels like their life is over." Atsa thinks for a moment. "Maybe I am giving them a little love."
 ____
@@ -34,7 +34,7 @@ We love to cling to pride and declare our independence, to declare that we stand
 And when that need is deprived, or warped, or broken and we stop believing that we can be loved, that is when we begin to walk a dark path. We cut ourselves off, from our emotions, from our humanity, from our fellow humans. We hurt ourselves. We hurt others. Sometimes, we can't even go on living. 
 
 
-[quote, Rebecca Hersher, http://www.npr.org/sections/goatsandsoda/2016/04/21/474847921/the-arctic-suicides-its-not-the-dark-that-kills-you[The Arctic Suicides]]
+[quote]
 ____
 The first assignment was to get into groups to brainstorm reasons that a person might commit suicide. The other boys in Paul-Ib's group messed around with a paper football. Paul-Ib bent over the paper and, in haphazard pencil, scribbled out 10 reasons. The first one said _Loneliness. Being lonely for long time. Being lonely in whole life._
 
@@ -42,3 +42,6 @@ Number three read simply _Love._
 ____
 
 
+***
+
+_Quotes from http://www.npr.org/sections/goatsandsoda/2016/04/21/474847921/the-arctic-suicides-its-not-the-dark-that-kills-you[The Arctic Suicides] by Rebecca Hersher_
