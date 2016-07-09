@@ -1,4 +1,5 @@
 = A Fairy Tale
 :hp-tags: personal, writing
 
-Once upon a time there was a little boy who was always very scared.
+Once upon a time there was a boy, and he was afraid.
+
