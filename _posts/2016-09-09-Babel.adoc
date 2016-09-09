@@ -1,3 +1,16 @@
 = Babel
 :hp-tags: writing, miscellaneous
 
+
+In Snow Crash, Stephenson summarises Sumerian culture roughly thus:
+
+Sumerian cities were essentially a form of information-based theocracy. The key figure of a city was the "En", a sort of priest-king, whose main role was the archiving and providing of information to the people in the form of "me": essentially the instructions for how to run a civilization. Each "me" was like a recipe or a computer program that described how to do a particular thing. For example, if you want to make a loaf of bread, you would go to the temple and consult the "En", who would give you the "me" that describes how to make a loaf of bread.
+
+Sumerian society was thus rather stagnant, and authoritarian. The En managed the me, and doled it out according to their rules. Incidentally, those rules potentially weren't even good ones: from my studies of Sumerian archaeology and history, Sumerian cities inevitably failed. The flood irrigation methods they used for agriculture were very environmentally destructive, and eventually the cities would basically be lost to dust and abandoned, only for the survivors to move down the road and build another one, doing the same thing again and again.
+
+There was one En, however, Enki, the En of Eridu, who realized this. He realized that as long as Sumerian society was so rigidly devoted to following the same "me," it would never evolve or advance. He was also a very clever individual, unusual in that he was capable of creating his own "me", but also a kind of linguistic "magic" of a sort. The Sumerians believed, and Stephenson argues they were right to, that language itself could have a kind of controlling force, that if you could say the right words you could literally implant ideas into someone's mind. Such incantations were called a "nam-shub," and Enki, seeing the calcified nature of Sumerian society, created a nam-shub to break it free in the most radical way.
+
+The nam-shub of Enki reached into the brains of everyone who heard it, and scrambled the language centers of the brain, essentially rendering a person's knowledge and ability to read and communicate as they'd known it useless. The upshot of this is the Tower of Babel story: suddenly, no one spoke the same language anymore.
+
+In doing this, the "me" were rendered useless. No one could understand them anymore. But in this, they were set free. Forced by this new state of informational chaos to create their own me, their own languages, their own cultures. Sumerian culture was destroyed, but through it's explosion was created the many-splendored diversity of human culture to come.
+
