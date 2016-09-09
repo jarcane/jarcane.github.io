@@ -2,7 +2,7 @@
 :hp-tags: writing, miscellaneous
 
 
-In Snow Crash, Stephenson summarises Sumerian culture roughly thus:
+In _Snow Crash_, Stephenson summarises Sumerian culture roughly thus:
 
 Sumerian cities were essentially a form of information-based theocracy. The key figure of a city was the "En", a sort of priest-king, whose main role was the archiving and providing of information to the people in the form of "me": essentially the instructions for how to run a civilization. Each "me" was like a recipe or a computer program that described how to do a particular thing. For example, if you want to make a loaf of bread, you would go to the temple and consult the "En", who would give you the "me" that describes how to make a loaf of bread.
 
@@ -13,4 +13,8 @@ There was one En, however, Enki, the En of Eridu, who realized this. He realized
 The nam-shub of Enki reached into the brains of everyone who heard it, and scrambled the language centers of the brain, essentially rendering a person's knowledge and ability to read and communicate as they'd known it useless. The upshot of this is the Tower of Babel story: suddenly, no one spoke the same language anymore.
 
 In doing this, the "me" were rendered useless. No one could understand them anymore. But in this, they were set free. Forced by this new state of informational chaos to create their own me, their own languages, their own cultures. Sumerian culture was destroyed, but through it's explosion was created the many-splendored diversity of human culture to come.
+
+A lot of this of course is probably bullshit. Fascinating bullshit, but bullshit. Good fiction often is, but, also like good fiction, it holds within it the kernel of a great parable or three from which we can learn. Stephenson was an amazingly prescient writer; underneath all the info-dumps and sarcasm, Snow Crash is full of honestly brilliant insights on what culture was to become in the so-called "information age," and it wasn't exactly good.
+
+Specifically, if we take Stephenson's version of the story of Babel as something of a parable, we can take from it a few key morals.
 
