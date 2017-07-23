@@ -1,24 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <script>
-        // UNCOMMENT AND USE YOUR VARIABLES FOR DISQUS AND GOOGLE ANALYTICS
-        // var d_id  = '',
-        //     g_id  = 'UA-XXXXXXXX-X', // Format: UA-########-#, Example: UA-11220899-1
-        //     g_url = 'XXXXXXX.XXX' // Format: #####.####, Example: webdesignporto.com
-    </script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <title>First Rust project: wf</title>
     <meta name="description" content="" />
 
     <meta name="HandheldFriendly" content="True" />
-    <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" type="text/css" href="//jarcane.github.io/themes/the-shell/assets/highlighter/prettify.css?v=1500842193673" />
-    <link rel="stylesheet" type="text/css" href="//jarcane.github.io/themes/the-shell/assets/css/screen.css?v=1500842193673" />
+    <link rel="shortcut icon" href="https://jarcane.github.io/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="//jarcane.github.io/themes/casper/assets/css/screen.css?v=1500842268841" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
 
     <link rel="canonical" href="https://jarcane.github.io/2015/07/05/First-Rust-project-wf.html" />
     <meta name="referrer" content="origin" />
@@ -60,26 +55,31 @@
     <meta name="generator" content="HubPress" />
     <link rel="alternate" type="application/rss+xml" title="Arcane Syntax" href="https://jarcane.github.io/rss/" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/atom-one-dark.min.css">
-
 </head>
-<body class="post-template tag-Rust tag-wf">
+<body class="post-template tag-Rust tag-wf nav-closed">
 
     
 
-<main class="content" role="main">
+    <div class="site-wrapper">
 
+        
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="blog-logo" href="https://jarcane.github.io"><img src="http://jarcane.github.io/images/lambdemic-big.png" alt="Arcane Syntax" /></a>
+    </nav>
+</header>
+
+<main class="content" role="main">
     <article class="post tag-Rust tag-wf">
 
         <header class="post-header">
-            <a id="blog-logo" href="https://jarcane.github.io">
-                    <img src="http://jarcane.github.io/images/lambdemic-big.png" alt="Blog Logo" />
-            </a>
+            <h1 class="post-title">First Rust project: wf</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2015-07-05">05 July 2015</time>  on <a href="https://jarcane.github.io/tag/Rust/">Rust</a>, <a href="https://jarcane.github.io/tag/wf/">wf</a>
+            </section>
         </header>
-
-
-        <span class="post-meta"><time datetime="2015-07-05">05 Jul 2015</time> on <a href="https://jarcane.github.io/tag/Rust/">Rust</a> | <a href="https://jarcane.github.io/tag/wf/">wf</a></span>
-
-        <h1 class="post-title">First Rust project: wf</h1>
 
         <section class="post-content">
             <div class="paragraph">
@@ -132,31 +132,27 @@ pub fn word_count(s: &amp;str) -&gt; HashMap&lt;String, u32&gt; {
 </div>
         </section>
 
-
-        <div id="disqus_thread"></div>
-        <script type="text/javascript">
-        var disqus_shortname = 'jarcane'; // required: replace example with your forum shortname
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-        
-
         <footer class="post-footer">
 
-                <section class="author">
-                    <h4>John Berry</h4>
-                    <p></p>
-                </section>
+
+            <figure class="author-image">
+                <a class="img" href="https://jarcane.github.io/author/jarcane/" style="background-image: url(https://avatars3.githubusercontent.com/u/8036258?v&#x3D;4)"><span class="hidden">John Berry's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="https://jarcane.github.io/author/jarcane/">John Berry</a></h4>
+
+                    <p>Read <a href="https://jarcane.github.io/author/jarcane/">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    <span class="author-location icon-location">Finland</span>
+                    <span class="author-link icon-link"><a href="http://jarcane.github.com">http://jarcane.github.com</a></span>
+                </div>
+            </section>
+
 
             <section class="share">
-                <h4>Share this</h4>
-                <a class="icon-twitter" href="http://twitter.com/share?text=First Rust project: wf&url=https://jarcane.github.io/"
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=First%20Rust%20project%3A%20wf&amp;url=https://jarcane.github.io/"
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <span class="hidden">Twitter</span>
                 </a>
@@ -173,19 +169,39 @@ pub fn word_count(s: &amp;str) -&gt; HashMap&lt;String, u32&gt; {
         </footer>
 
 
+        <section class="post-comments">
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+          var disqus_shortname = 'jarcane'; // required: replace example with your forum shortname
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </section>
+
+
     </article>
 
 </main>
 
+<aside class="read-next">
+</aside>
 
-    <footer class="site-footer">
-        <!-- <a class="subscribe icon-feed" href="https://jarcane.github.io/rss/"><span class="tooltip">Subscribe!</span></a> -->
-        <div class="inner">
-             <section class="copyright">All content copyright <a href="/">Arcane Syntax</a> &copy; 2017 &bull; All rights reserved.</section>
-             <section class="poweredby">Proudly published with <a href="http://hubpress.io">HubPress</span></a> in <a href="https://github.com/mityalebedev/The-Shell">The Shell</a> theme.</section>
-        </div>
-    </footer>
 
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="https://jarcane.github.io">Arcane Syntax</a> &copy; 2017</section>
+            <section class="poweredby">Proudly published with <a href="http://hubpress.io">HubPress</a></section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js?v="></script> 
       <script type="text/javascript">
         jQuery( document ).ready(function() {
@@ -201,7 +217,8 @@ pub fn word_count(s: &amp;str) -&gt; HashMap&lt;String, u32&gt; {
        
     <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
-    <script type='text/javascript' src="//jarcane.github.io/themes/the-shell/assets/highlighter/prettify.js?v=1500842193673"></script>
-    <script type='text/javascript' src="//jarcane.github.io/themes/the-shell/assets/js/shell.js?v=1500842193673"></script>
+    <script type="text/javascript" src="//jarcane.github.io/themes/casper/assets/js/jquery.fitvids.js?v=1500842268841"></script>
+    <script type="text/javascript" src="//jarcane.github.io/themes/casper/assets/js/index.js?v=1500842268841"></script>
+
 </body>
 </html>
