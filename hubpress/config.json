@@ -2,7 +2,8 @@
   "meta": {
     "username": "jarcane",
     "repositoryName": "jarcane.github.io",
-    "branch": "master"
+    "branch": "master",
+    "cname": ""
   },
   "site": {
     "title": "Arcane Syntax",
@@ -11,14 +12,24 @@
     "cover": "http://jarcane.github.io/images/arcane_seals_by_draydenx-d5s2slo.jpg",
     "postsPerPage": "10",
     "disqus": "jarcane",
-    "url": "https://jarcane.github.io"
+    "url": "https://jarcane.github.io",
+    "delay": "",
+    "googleAnalytics": ""
   },
   "socialnetwork": {
     "twitter": "https://twitter.com/J_Arcane",
-    "github": "https://github.com/jarcane"
+    "github": "https://github.com/jarcane",
+    "email": "",
+    "facebook": "",
+    "googleplus": "",
+    "instagram": "",
+    "pinterest": "",
+    "flickr": "",
+    "linkedin": "",
+    "stackoverflow": ""
   },
   "theme": {
-    "name": "casper",
+    "name": "ghostium",
     "url": "//jarcane.github.io/themes/Casper"
   },
   "urls": {
