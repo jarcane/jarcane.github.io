@@ -29,13 +29,13 @@
     "stackoverflow": ""
   },
   "theme": {
-    "name": "the-shell",
+    "name": "casper",
     "url": "//jarcane.github.io/themes/Casper"
   },
   "urls": {
     "site": "https://jarcane.github.io",
     "hubpress": "https://jarcane.github.io",
-    "theme": "//jarcane.github.io/themes/ghostium",
+    "theme": "//jarcane.github.io/themes/the-shell",
     "images": "https://jarcane.github.io/images"
   },
   "initialisationConfigComponent": {
