@@ -1,207 +1,501 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
     <title>Arcane Syntax</title>
-    <meta name="description" content="An assortment of incantations and observations on the functional arts." />
 
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <link rel="shortcut icon" href="//jarcane.github.io/themes/Casper/favicon.ico">
+    <meta name="description" content="">
 
-    <link rel="stylesheet" type="text/css" href="//jarcane.github.io/themes/Casper/assets/css/screen.css?v=1.0.0" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Arcane Syntax">
+    <meta name="twitter:description" content="">
 
-    <link rel="canonical" href="https://jarcane.github.io" />
-    <link rel="next" href="https://jarcane.github.io/page/2/" />
-    <meta name="generator" content="Ghost ?" />
-    <link rel="alternate" type="application/rss+xml" title="Arcane Syntax" href="https://jarcane.github.io/rss" />
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
-</head>
-<body class="home-template">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Arcane Syntax">
+    <meta property="og:description" content="">
 
+    <!-- <meta name="twitter:site" content="">
+
+<meta name="twitter:creator" content="">
+
+<meta name="google-site-verification" content="">
+
+<meta property="fb:admins" content="">
+ -->
+
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+
+    <link href="//fonts.googleapis.com/" rel="dns-prefetch">
+    <link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:700,400&subset=latin,latin-ext" rel="stylesheet">
+
+    <link rel="stylesheet" href="//jarcane.github.io/themes/ghostium/assets/css/main.min.css?v=1500842109541"/>
+    <link rel="stylesheet" href="//jarcane.github.io/themes/ghostium/assets/css/custom.css?v=1500842109541"/>
+    <link rel="stylesheet" href="//jarcane.github.io/themes/ghostium/assets/css/asciidoctor-foundation.css?v=1500842109541"/>
+
+
+
+
+    <script type="text/javascript">
+      var ga_ua = 'UA-XXXXX-X';
+      
+      var disqus_shortname = 'example';
+      
+      var enable_pjax = true;
+
+      // Pace Options
+      // ==============
+      window.paceOptions = {
+        catchupTime: 100,
+        minTime: 100,
+        elements: false,
+        restartOnRequestAfter: 500,
+        startOnPageLoad: false
+      }
+
+      // Ghostium Globals
+      // ==============
+      window.GHOSTIUM = {};
+      GHOSTIUM.haveGA = typeof ga_ua !== 'undefined' && ga_ua !== 'UA-XXXXX-X';
+      GHOSTIUM.haveDisqus = typeof disqus_shortname !== 'undefined' && disqus_shortname !== 'example';
+      GHOSTIUM.enablePjax = typeof enable_pjax !== 'undefined' ? enable_pjax : true;
+    </script>
+
+    <script src="//jarcane.github.io/themes/ghostium/assets/js/head-scripts.min.js?v=1500842109541"></script>
+
+    <link rel="canonical" href="https://jarcane.github.io/" />
+    <meta name="referrer" content="origin" />
     
-<header class="main-header " style="background-image: url(http://jarcane.github.io/images/arcane_seals_by_draydenx-d5s2slo.jpg)">
-    <nav class="main-nav overlay clearfix">
-        <a class="blog-logo" href="https://jarcane.github.io"><img src="http://jarcane.github.io/images/lambdemic-big.png" alt="Blog Logo" /></a>
-        <!-- <a class="subscribe-button icon-feed" href="https://jarcane.github.io/rss/">Subscribe</a> -->
-    </nav>
-    <div class="vertical">
-        <div class="main-header-content inner">
-            <h1 class="page-title">Arcane Syntax</h1>
-            <h2 class="page-description">An assortment of incantations and observations on the functional arts.</h2>
-        </div>
-    </div>
-    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
-</header>
-
-<main id="content" class="content" role="main">
-
-    <div class="extra-pagination inner">
-        <nav class="pagination" role="navigation">
-        <span class="page-number">Page 1 of 4</span>
-            <a class="older-posts" href="https://jarcane.github.io/page/2/">Older Posts &rarr;</a>
-    </nav>
-    </div>
+    <meta property="og:site_name" content="Arcane Syntax" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Arcane Syntax" />
+    <meta property="og:url" content="https://jarcane.github.io/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Arcane Syntax" />
+    <meta name="twitter:url" content="https://jarcane.github.io/" />
     
-    <article class="post tag-personal">
-        <header class="post-header">
-            <h2 class="post-title"><a href="https://jarcane.github.io/2016/04/29/Alone.html">Alone</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p>When I was 13 years old I predicted, and held for some time, that I would die by the age of 35. That deadline is just <a class="read-more" href="https://jarcane.github.io/2016/04/29/Alone.html">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            
-            
-             on <a href="https://jarcane.github.io/tag/personal">personal</a>
-            <time class="post-date" datetime="2016-04-29">29 April 2016</time>
-        </footer>
-    </article>
-    <article class="post tag-personal">
-        <header class="post-header">
-            <h2 class="post-title"><a href="https://jarcane.github.io/2016/01/11/We-can-be-heroes.html">We can be heroes</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p>On the 10th of January, 2016, David Bowie left this Earth a blander place. There are people who walk this earth so long, and with such <a class="read-more" href="https://jarcane.github.io/2016/01/11/We-can-be-heroes.html">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            
-            
-             on <a href="https://jarcane.github.io/tag/personal">personal</a>
-            <time class="post-date" datetime="2016-01-11">11 January 2016</time>
-        </footer>
-    </article>
-    <article class="post tag-personal">
-        <header class="post-header">
-            <h2 class="post-title"><a href="https://jarcane.github.io/2015/12/05/Hero.html">Hero</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p>My Facebook this morning brought to my attention this amazing and wonderful interview with Carrie Fisher and her dog Gary. Carrie Fisher is something of a <a class="read-more" href="https://jarcane.github.io/2015/12/05/Hero.html">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            
-            
-             on <a href="https://jarcane.github.io/tag/personal">personal</a>
-            <time class="post-date" datetime="2015-12-05">05 December 2015</time>
-        </footer>
-    </article>
-    <article class="post tag-personal">
-        <header class="post-header">
-            <h2 class="post-title"><a href="https://jarcane.github.io/2015/09/24/Fuck-you-Im-great.html">Fuck you, I&#x27;m great</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p>Hey new dev - think you&#39;re dumb? I struggled for 2 hours yesterday because I forgot how a single HTML tag works. We all <a class="read-more" href="https://jarcane.github.io/2015/09/24/Fuck-you-Im-great.html">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            
-            
-             on <a href="https://jarcane.github.io/tag/personal">personal</a>
-            <time class="post-date" datetime="2015-09-24">24 September 2015</time>
-        </footer>
-    </article>
-    <article class="post tag-personal">
-        <header class="post-header">
-            <h2 class="post-title"><a href="https://jarcane.github.io/2015/07/30/Stories.html">Stories</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p>I want a burrito. I have lived in Finland for two years, and sometimes, even often, I still crave a burrito. And not just any burrito, <a class="read-more" href="https://jarcane.github.io/2015/07/30/Stories.html">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            
-            
-             on <a href="https://jarcane.github.io/tag/personal">personal</a>
-            <time class="post-date" datetime="2015-07-30">30 July 2015</time>
-        </footer>
-    </article>
-    <article class="post tag-personal">
-        <header class="post-header">
-            <h2 class="post-title"><a href="https://jarcane.github.io/2015/07/24/Comfortable.html">Comfortable</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p>A thread on HN asks, "Why do you want to achieve something?" This particular answer struck a chord: Honestly, it&#8217;s the growing realization that <a class="read-more" href="https://jarcane.github.io/2015/07/24/Comfortable.html">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            
-            
-             on <a href="https://jarcane.github.io/tag/personal">personal</a>
-            <time class="post-date" datetime="2015-07-24">24 July 2015</time>
-        </footer>
-    </article>
-    <article class="post tag-Haskell tag-functional tag-Heresy">
-        <header class="post-header">
-            <h2 class="post-title"><a href="https://jarcane.github.io/2015/07/21/Whats-the-use-of-Monads.html">What&#x27;s the use of Monads?</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p>The following was originally posted on HN. OK, go on, explain what else it is, rather than accidental convention of how to ensure an order of <a class="read-more" href="https://jarcane.github.io/2015/07/21/Whats-the-use-of-Monads.html">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            
-            
-             on <a href="https://jarcane.github.io/tag/Haskell">Haskell</a>, <a href="https://jarcane.github.io/tag/functional"> functional</a>, <a href="https://jarcane.github.io/tag/Heresy"> Heresy</a>
-            <time class="post-date" datetime="2015-07-21">21 July 2015</time>
-        </footer>
-    </article>
-    <article class="post tag-personal tag-politics">
-        <header class="post-header">
-            <h2 class="post-title"><a href="https://jarcane.github.io/2015/07/18/How-do-you-say-it.html">How do you say it?</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p>I cried this morning. I didn&#8217;t know precisely why even, at the time. Moments before I had been attempting to look up options for <a class="read-more" href="https://jarcane.github.io/2015/07/18/How-do-you-say-it.html">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            
-            
-             on <a href="https://jarcane.github.io/tag/personal">personal</a>, <a href="https://jarcane.github.io/tag/politics"> politics</a>
-            <time class="post-date" datetime="2015-07-18">18 July 2015</time>
-        </footer>
-    </article>
-    <article class="post tag-politics">
-        <header class="post-header">
-            <h2 class="post-title"><a href="https://jarcane.github.io/2015/07/11/Enthusiasm.html">Enthusiasm.</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p>I honestly believe this is what happened to Howard Dean too. I was excited about Dean, he was the first candidate in my adult life who <a class="read-more" href="https://jarcane.github.io/2015/07/11/Enthusiasm.html">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            
-            
-             on <a href="https://jarcane.github.io/tag/politics">politics</a>
-            <time class="post-date" datetime="2015-07-11">11 July 2015</time>
-        </footer>
-    </article>
-    <article class="post tag-miscellaneous">
-        <header class="post-header">
-            <h2 class="post-title"><a href="https://jarcane.github.io/2015/07/10/Hocus-Pocus-Excerpts-from-Chapter-32.html">Hocus Pocus - Excerpts from Chapter 32</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p>“What a  clever trap your Ruling Class set for us,” he went on. “First the atomic bomb. Now this.” “Trap?” I echoed wonderingly. “They looted your <a class="read-more" href="https://jarcane.github.io/2015/07/10/Hocus-Pocus-Excerpts-from-Chapter-32.html">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            
-            
-             on <a href="https://jarcane.github.io/tag/miscellaneous">miscellaneous</a>
-            <time class="post-date" datetime="2015-07-10">10 July 2015</time>
-        </footer>
-    </article>
-    
-    <nav class="pagination" role="navigation">
-        <span class="page-number">Page 1 of 4</span>
-            <a class="older-posts" href="https://jarcane.github.io/page/2/">Older Posts &rarr;</a>
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Website",
+    "publisher": "Arcane Syntax",
+    "url": "https://jarcane.github.io/"
+}
+    </script>
+
+    <meta name="generator" content="HubPress" />
+    <link rel="alternate" type="application/rss+xml" title="Arcane Syntax" href="https://jarcane.github.io/rss/" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/atom-one-dark.min.css">
+  </head>
+  <body class="home-template">
+
+    <button data-action="open-drawer" id="drawer-button" class="drawer-button"><i class="fa fa-bars"></i></button>
+    <nav tabindex="-1" class="drawer">
+      <div class="drawer-container">
+        <!--.drawer-search(role="search")-->
+        <ul role="navigation" class="drawer-list">
+          
+          <li class="drawer-list-item">
+            <a href="https://jarcane.github.io" data-pjax>
+              <i class="fa fa-home"></i>Home
+            </a>
+          </li>
+          <!-- <li class="drawer-list-item">
+            <a href="https://jarcane.github.io" title="Arcane Syntax" data-pjax>
+              <i class="fa fa-list-alt"></i>All posts
+            </a>
+          </li> -->
+          <li class="drawer-list-item">
+            <a href="https://jarcane.github.io/rss/">
+              <i class="fa fa-rss"></i>Subscribe to Feed
+            </a>
+          </li>
+          <li class="drawer-list-divider"></li>
+          <li class="drawer-list-item drawer-list-title">
+            Follow me
+          </li>
+          
+          
+          <li class="drawer-list-item">
+            <a href="https://twitter.com/J_Arcane" title="Twitter" target="_blank">
+              <i class="fa fa-twitter"></i>Twitter
+            </a>
+          </li>
+          <li class="drawer-list-item">
+            <a href="https://github.com/jarcane" title="Github" target="_blank">
+              <i class="fa fa-github"></i>Github
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
-</main>
+    <div class="drawer-overlay"></div>
+    <main id="container" role="main" class="container">
+      <div class="surface">
+        <div class="surface-container">
+          <div data-pjax-container class="content">
+            
+<aside role="banner" class="cover">
+  <div data-load-image="http://jarcane.github.io/images/arcane_seals_by_draydenx-d5s2slo.jpg" class="cover-image"></div>
+  <div class="cover-container">
+      <a href="https://jarcane.github.io" class="cover-logo" data-pjax>
+        <img src="http://jarcane.github.io/images/lambdemic-big.png" alt="Blog Logo">
+      </a>
+    <h1 class="cover-title"><a href="https://jarcane.github.io" title="Arcane Syntax">Arcane Syntax</a></h1>
+    <p class="cover-description">An assortment of incantations and observations on the functional arts.</p>
+  </div>
+</aside>
+
+<section class="wrapper" tabindex="0">
+  <div class="wrapper-container">
+    Arcane Syntax
+
+    <section class="post-list">
+        <article itemscope itemtype="http://schema.org/BlogPosting"
+          role="article" class="post-item post tag-personal">
+          <header class="post-item-header">
+            <h2 itemprop="name" class="post-item-title">
+              <a href="https://jarcane.github.io/2016/04/29/Alone.html" itemprop="url" data-pjax title="Alone">
+                Alone
+              </a>
+            </h2>
+          </header>
+          <section itemprop="description" class="post-item-excerpt">
+            <p>When I was 13 years old I predicted, and held for some time, that I would die by the age of 35. That deadline is just 8 months away. I am 34 years old. I&hellip;</p>
+          </section>
+          <footer class="post-item-footer">
+            <ul class="post-item-meta-list">
+              <li class="post-item-meta-item">
+                <time datetime="2016-04-29" itemprop="datePublished">
+                  a year ago
+                </time>
+              </li>
+                <li class="post-item-meta-item">
+                  <span class="tags"><i class="fa fa-tags"></i>
+                      <span>
+                      <a href="https://jarcane.github.io/tag/personal/">personal</a></span>
+                  </span>
+                </li>
+              <li class="post-item-meta-item">
+                <a href="https://jarcane.github.io/2016/04/29/Alone.html#disqus_thread" data-pjax data-disqus-identifier="">Comments</a>
+              </li>
+            </ul>
+          </footer>
+        </article>
+        <article itemscope itemtype="http://schema.org/BlogPosting"
+          role="article" class="post-item post tag-personal">
+          <header class="post-item-header">
+            <h2 itemprop="name" class="post-item-title">
+              <a href="https://jarcane.github.io/2016/01/11/We-can-be-heroes.html" itemprop="url" data-pjax title="We can be heroes">
+                We can be heroes
+              </a>
+            </h2>
+          </header>
+          <section itemprop="description" class="post-item-excerpt">
+            <p>On the 10th of January, 2016, David Bowie left this Earth a blander place. There are people who walk this earth so long, and with such power over our hearts, that we never believe they&hellip;</p>
+          </section>
+          <footer class="post-item-footer">
+            <ul class="post-item-meta-list">
+              <li class="post-item-meta-item">
+                <time datetime="2016-01-11" itemprop="datePublished">
+                  2 years ago
+                </time>
+              </li>
+                <li class="post-item-meta-item">
+                  <span class="tags"><i class="fa fa-tags"></i>
+                      <span>
+                      <a href="https://jarcane.github.io/tag/personal/">personal</a></span>
+                  </span>
+                </li>
+              <li class="post-item-meta-item">
+                <a href="https://jarcane.github.io/2016/01/11/We-can-be-heroes.html#disqus_thread" data-pjax data-disqus-identifier="">Comments</a>
+              </li>
+            </ul>
+          </footer>
+        </article>
+        <article itemscope itemtype="http://schema.org/BlogPosting"
+          role="article" class="post-item post tag-personal">
+          <header class="post-item-header">
+            <h2 itemprop="name" class="post-item-title">
+              <a href="https://jarcane.github.io/2015/12/05/Hero.html" itemprop="url" data-pjax title="Hero">
+                Hero
+              </a>
+            </h2>
+          </header>
+          <section itemprop="description" class="post-item-excerpt">
+            <p>My Facebook this morning brought to my attention this amazing and wonderful interview with Carrie Fisher and her dog Gary. Carrie Fisher is something of a hero of mine. And not because of Star Wars,&hellip;</p>
+          </section>
+          <footer class="post-item-footer">
+            <ul class="post-item-meta-list">
+              <li class="post-item-meta-item">
+                <time datetime="2015-12-05" itemprop="datePublished">
+                  2 years ago
+                </time>
+              </li>
+                <li class="post-item-meta-item">
+                  <span class="tags"><i class="fa fa-tags"></i>
+                      <span>
+                      <a href="https://jarcane.github.io/tag/personal/">personal</a></span>
+                  </span>
+                </li>
+              <li class="post-item-meta-item">
+                <a href="https://jarcane.github.io/2015/12/05/Hero.html#disqus_thread" data-pjax data-disqus-identifier="">Comments</a>
+              </li>
+            </ul>
+          </footer>
+        </article>
+        <article itemscope itemtype="http://schema.org/BlogPosting"
+          role="article" class="post-item post tag-personal">
+          <header class="post-item-header">
+            <h2 itemprop="name" class="post-item-title">
+              <a href="https://jarcane.github.io/2015/09/24/Fuck-you-Im-great.html" itemprop="url" data-pjax title="Fuck you, I&#x27;m great">
+                Fuck you, I&#x27;m great
+              </a>
+            </h2>
+          </header>
+          <section itemprop="description" class="post-item-excerpt">
+            <p>Hey new dev - think you&#39;re dumb? I struggled for 2 hours yesterday because I forgot how a single HTML tag works. We all make mistakes. ❤&mdash; 10x Pro Grammar (@kerrizor) September 23,&hellip;</p>
+          </section>
+          <footer class="post-item-footer">
+            <ul class="post-item-meta-list">
+              <li class="post-item-meta-item">
+                <time datetime="2015-09-24" itemprop="datePublished">
+                  2 years ago
+                </time>
+              </li>
+                <li class="post-item-meta-item">
+                  <span class="tags"><i class="fa fa-tags"></i>
+                      <span>
+                      <a href="https://jarcane.github.io/tag/personal/">personal</a></span>
+                  </span>
+                </li>
+              <li class="post-item-meta-item">
+                <a href="https://jarcane.github.io/2015/09/24/Fuck-you-Im-great.html#disqus_thread" data-pjax data-disqus-identifier="">Comments</a>
+              </li>
+            </ul>
+          </footer>
+        </article>
+        <article itemscope itemtype="http://schema.org/BlogPosting"
+          role="article" class="post-item post tag-personal">
+          <header class="post-item-header">
+            <h2 itemprop="name" class="post-item-title">
+              <a href="https://jarcane.github.io/2015/07/30/Stories.html" itemprop="url" data-pjax title="Stories">
+                Stories
+              </a>
+            </h2>
+          </header>
+          <section itemprop="description" class="post-item-excerpt">
+            <p>I want a burrito. I have lived in Finland for two years, and sometimes, even often, I still crave a burrito. And not just any burrito, but the unique blend of cheese, greasy meat, and&hellip;</p>
+          </section>
+          <footer class="post-item-footer">
+            <ul class="post-item-meta-list">
+              <li class="post-item-meta-item">
+                <time datetime="2015-07-30" itemprop="datePublished">
+                  2 years ago
+                </time>
+              </li>
+                <li class="post-item-meta-item">
+                  <span class="tags"><i class="fa fa-tags"></i>
+                      <span>
+                      <a href="https://jarcane.github.io/tag/personal/">personal</a></span>
+                  </span>
+                </li>
+              <li class="post-item-meta-item">
+                <a href="https://jarcane.github.io/2015/07/30/Stories.html#disqus_thread" data-pjax data-disqus-identifier="">Comments</a>
+              </li>
+            </ul>
+          </footer>
+        </article>
+        <article itemscope itemtype="http://schema.org/BlogPosting"
+          role="article" class="post-item post tag-personal">
+          <header class="post-item-header">
+            <h2 itemprop="name" class="post-item-title">
+              <a href="https://jarcane.github.io/2015/07/24/Comfortable.html" itemprop="url" data-pjax title="Comfortable">
+                Comfortable
+              </a>
+            </h2>
+          </header>
+          <section itemprop="description" class="post-item-excerpt">
+            <p>A thread on HN asks, "Why do you want to achieve something?" This particular answer struck a chord: Honestly, it&#8217;s the growing realization that despite all of my efforts, I haven&#8217;t&hellip;</p>
+          </section>
+          <footer class="post-item-footer">
+            <ul class="post-item-meta-list">
+              <li class="post-item-meta-item">
+                <time datetime="2015-07-24" itemprop="datePublished">
+                  2 years ago
+                </time>
+              </li>
+                <li class="post-item-meta-item">
+                  <span class="tags"><i class="fa fa-tags"></i>
+                      <span>
+                      <a href="https://jarcane.github.io/tag/personal/">personal</a></span>
+                  </span>
+                </li>
+              <li class="post-item-meta-item">
+                <a href="https://jarcane.github.io/2015/07/24/Comfortable.html#disqus_thread" data-pjax data-disqus-identifier="">Comments</a>
+              </li>
+            </ul>
+          </footer>
+        </article>
+        <article itemscope itemtype="http://schema.org/BlogPosting"
+          role="article" class="post-item post tag-Haskell tag-functional tag-Heresy">
+          <header class="post-item-header">
+            <h2 itemprop="name" class="post-item-title">
+              <a href="https://jarcane.github.io/2015/07/21/Whats-the-use-of-Monads.html" itemprop="url" data-pjax title="What&#x27;s the use of Monads?">
+                What&#x27;s the use of Monads?
+              </a>
+            </h2>
+          </header>
+          <section itemprop="description" class="post-item-excerpt">
+            <p>The following was originally posted on HN. OK, go on, explain what else it is, rather than accidental convention of how to ensure an order of evaluation of a pair of expressions in a particular&hellip;</p>
+          </section>
+          <footer class="post-item-footer">
+            <ul class="post-item-meta-list">
+              <li class="post-item-meta-item">
+                <time datetime="2015-07-21" itemprop="datePublished">
+                  2 years ago
+                </time>
+              </li>
+                <li class="post-item-meta-item">
+                  <span class="tags"><i class="fa fa-tags"></i>
+                      <span>
+                      <a href="https://jarcane.github.io/tag/Haskell/">Haskell</a>, <a href="https://jarcane.github.io/tag/functional/">functional</a>, <a href="https://jarcane.github.io/tag/Heresy/">Heresy</a></span>
+                  </span>
+                </li>
+              <li class="post-item-meta-item">
+                <a href="https://jarcane.github.io/2015/07/21/Whats-the-use-of-Monads.html#disqus_thread" data-pjax data-disqus-identifier="">Comments</a>
+              </li>
+            </ul>
+          </footer>
+        </article>
+        <article itemscope itemtype="http://schema.org/BlogPosting"
+          role="article" class="post-item post tag-personal tag-politics">
+          <header class="post-item-header">
+            <h2 itemprop="name" class="post-item-title">
+              <a href="https://jarcane.github.io/2015/07/18/How-do-you-say-it.html" itemprop="url" data-pjax title="How do you say it?">
+                How do you say it?
+              </a>
+            </h2>
+          </header>
+          <section itemprop="description" class="post-item-excerpt">
+            <p>I cried this morning. I didn&#8217;t know precisely why even, at the time. Moments before I had been attempting to look up options for our next meal on the internet. My wife stepped&hellip;</p>
+          </section>
+          <footer class="post-item-footer">
+            <ul class="post-item-meta-list">
+              <li class="post-item-meta-item">
+                <time datetime="2015-07-18" itemprop="datePublished">
+                  2 years ago
+                </time>
+              </li>
+                <li class="post-item-meta-item">
+                  <span class="tags"><i class="fa fa-tags"></i>
+                      <span>
+                      <a href="https://jarcane.github.io/tag/personal/">personal</a>, <a href="https://jarcane.github.io/tag/politics/">politics</a></span>
+                  </span>
+                </li>
+              <li class="post-item-meta-item">
+                <a href="https://jarcane.github.io/2015/07/18/How-do-you-say-it.html#disqus_thread" data-pjax data-disqus-identifier="">Comments</a>
+              </li>
+            </ul>
+          </footer>
+        </article>
+        <article itemscope itemtype="http://schema.org/BlogPosting"
+          role="article" class="post-item post tag-politics">
+          <header class="post-item-header">
+            <h2 itemprop="name" class="post-item-title">
+              <a href="https://jarcane.github.io/2015/07/11/Enthusiasm.html" itemprop="url" data-pjax title="Enthusiasm.">
+                Enthusiasm.
+              </a>
+            </h2>
+          </header>
+          <section itemprop="description" class="post-item-excerpt">
+            <p>I honestly believe this is what happened to Howard Dean too. I was excited about Dean, he was the first candidate in my adult life who displayed anything like passion or enthusiasm or conviction. The&hellip;</p>
+          </section>
+          <footer class="post-item-footer">
+            <ul class="post-item-meta-list">
+              <li class="post-item-meta-item">
+                <time datetime="2015-07-11" itemprop="datePublished">
+                  2 years ago
+                </time>
+              </li>
+                <li class="post-item-meta-item">
+                  <span class="tags"><i class="fa fa-tags"></i>
+                      <span>
+                      <a href="https://jarcane.github.io/tag/politics/">politics</a></span>
+                  </span>
+                </li>
+              <li class="post-item-meta-item">
+                <a href="https://jarcane.github.io/2015/07/11/Enthusiasm.html#disqus_thread" data-pjax data-disqus-identifier="">Comments</a>
+              </li>
+            </ul>
+          </footer>
+        </article>
+        <article itemscope itemtype="http://schema.org/BlogPosting"
+          role="article" class="post-item post tag-miscellaneous">
+          <header class="post-item-header">
+            <h2 itemprop="name" class="post-item-title">
+              <a href="https://jarcane.github.io/2015/07/10/Hocus-Pocus-Excerpts-from-Chapter-32.html" itemprop="url" data-pjax title="Hocus Pocus - Excerpts from Chapter 32">
+                Hocus Pocus - Excerpts from Chapter 32
+              </a>
+            </h2>
+          </header>
+          <section itemprop="description" class="post-item-excerpt">
+            <p>“What a  clever trap your Ruling Class set for us,” he went on. “First the atomic bomb. Now this.” “Trap?” I echoed wonderingly. “They looted your public and corporate treasuries, and turned your industries over&hellip;</p>
+          </section>
+          <footer class="post-item-footer">
+            <ul class="post-item-meta-list">
+              <li class="post-item-meta-item">
+                <time datetime="2015-07-10" itemprop="datePublished">
+                  2 years ago
+                </time>
+              </li>
+                <li class="post-item-meta-item">
+                  <span class="tags"><i class="fa fa-tags"></i>
+                      <span>
+                      <a href="https://jarcane.github.io/tag/miscellaneous/">miscellaneous</a></span>
+                  </span>
+                </li>
+              <li class="post-item-meta-item">
+                <a href="https://jarcane.github.io/2015/07/10/Hocus-Pocus-Excerpts-from-Chapter-32.html#disqus_thread" data-pjax data-disqus-identifier="">Comments</a>
+              </li>
+            </ul>
+          </footer>
+        </article>
+    </section>
+
+      <nav role="pagination" class="post-list-pagination">
+  <span class="post-list-pagination-item post-list-pagination-item-current">Page 1 of 4</span>
+    <a href="https://jarcane.github.io/page/2/" class="post-list-pagination-item post-list-pagination-item-next" data-pjax>
+      Older&nbsp;<i class="fa fa-angle-double-right"></i>
+    </a>
+</nav>
 
 
-    <footer class="site-footer clearfix">
-        <section class="copyright"><a href="https://jarcane.github.io">Arcane Syntax</a> &copy; 2016</section>
-        <section class="poweredby">Proudly published with <a href="http://hubpress.io">HubPress</a></section>
+    <footer role="contentinfo" class="footer">
+      <p><small>Copyright &copy; <span itemprop="copyrightHolder">Arcane Syntax</span>. 2017. All Rights Reserved.</small></p>
+      <p><small><a href="http://ghostium.oswaldoacauan.com/" target="_blank">Ghostium Theme</a> by <a href="http://twitter.com/oswaldoacauan" target="_blank">@oswaldoacauan</a></small></p>
+      <p><small>Adapted by <a href="https://twitter.com/mgreau">Maxime Gréau</a></small></p>
+      <p><small>Published with <a href="http://hubpress.io">HubPress</a></small></p>
     </footer>
+  </div>
+</section>
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js?v="></script> 
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js?v="></script> 
       <script type="text/javascript">
         jQuery( document ).ready(function() {
           // change date with ago
@@ -211,11 +505,13 @@
           });
         });
 
-        hljs.initHighlightingOnLoad();      
+        hljs.initHighlightingOnLoad();
       </script>
+       
+    <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
-    <script type="text/javascript" src="//jarcane.github.io/themes/Casper/assets/js/jquery.fitvids.js?v=1.0.0"></script>
-    <script type="text/javascript" src="//jarcane.github.io/themes/Casper/assets/js/index.js?v=1.0.0"></script>
+    <script src="//jarcane.github.io/themes/ghostium/assets/js/foot-scripts.min.js?v=1500842109541"></script>
 
-</body>
+
+  </body>
 </html>
