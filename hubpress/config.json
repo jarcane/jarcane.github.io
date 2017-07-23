@@ -1,1 +1,40 @@
-{"meta":{"username":"jarcane","repositoryName":"jarcane.github.io","branch":"master"},"site":{"title":"Arcane Syntax","description":"An assortment of incantations and observations on the functional arts.","logo":"http://jarcane.github.io/images/lambdemic-big.png","cover":"http://jarcane.github.io/images/arcane_seals_by_draydenx-d5s2slo.jpg","postsPerPage":"10","disqus":"jarcane","url":"https://jarcane.github.io"},"socialnetwork":{"twitter":"https://twitter.com/J_Arcane","github":"https://github.com/jarcane"},"theme":{"name":"Casper","url":"//jarcane.github.io/themes/casper"}}
+{
+  "meta": {
+    "username": "jarcane",
+    "repositoryName": "jarcane.github.io",
+    "branch": "master"
+  },
+  "site": {
+    "title": "Arcane Syntax",
+    "description": "An assortment of incantations and observations on the functional arts.",
+    "logo": "http://jarcane.github.io/images/lambdemic-big.png",
+    "cover": "http://jarcane.github.io/images/arcane_seals_by_draydenx-d5s2slo.jpg",
+    "postsPerPage": "10",
+    "disqus": "jarcane",
+    "url": "https://jarcane.github.io"
+  },
+  "socialnetwork": {
+    "twitter": "https://twitter.com/J_Arcane",
+    "github": "https://github.com/jarcane"
+  },
+  "theme": {
+    "name": "casper",
+    "url": "//jarcane.github.io/themes/Casper"
+  },
+  "urls": {
+    "site": "https://jarcane.github.io",
+    "hubpress": "https://jarcane.github.io",
+    "theme": "//jarcane.github.io/themes/casper",
+    "images": "https://jarcane.github.io/images"
+  },
+  "initialisationConfigComponent": {
+    "name": "initialise-configuration",
+    "computed": {},
+    "methods": {},
+    "staticRenderFns": [
+      null,
+      null,
+      null
+    ]
+  }
+}
